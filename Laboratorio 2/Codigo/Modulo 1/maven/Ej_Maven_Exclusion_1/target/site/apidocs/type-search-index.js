@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"edu.utn.ej_maven_exclusion_1","l":"Ej_Maven_Exclusion_1"}];updateSearchResults();

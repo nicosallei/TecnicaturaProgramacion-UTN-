@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"edu.utn.ej_maven_exclusion_1","c":"Ej_Maven_Exclusion_1","l":"Ej_Maven_Exclusion_1()","u":"%3Cinit%3E()"},{"p":"edu.utn.ej_maven_exclusion_1","c":"Ej_Maven_Exclusion_1","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();

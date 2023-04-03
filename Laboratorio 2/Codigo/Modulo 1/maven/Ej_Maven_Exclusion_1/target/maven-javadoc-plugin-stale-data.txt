@@ -1,0 +1,49 @@
+@options
+@packages
+-classpath
+'C:/Users/nicos/.m2/repository/edu/utn/ClasesBase/1.0/ClasesBase-1.0.jar;C:/Users/nicos/.m2/repository/edu/utn/M/1.0/M-1.0.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'C:/Users/nicos/Desktop/Tecnicatura en programacion UTN/Laboratorio 2/Programacion/maven/Ej_Maven_Exclusion_1/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/nicos/Desktop/Tecnicatura en programacion UTN/Laboratorio 2/Programacion/maven/Ej_Maven_Exclusion_1/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Ej_Maven_Exclusion_1 1.0 API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/Users/nicos/Desktop/Tecnicatura en programacion UTN/Laboratorio 2/Programacion/maven/Ej_Maven_Exclusion_1/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Ej_Maven_Exclusion_1 1.0 API'
+edu.utn.ej_maven_exclusion_1
+C:\Users\nicos\.m2\repository\edu\utn\ClasesBase\1.0\ClasesBase-1.0.jar = 1680290898109
+C:\Users\nicos\.m2\repository\edu\utn\M\1.0\M-1.0.jar = 1680291118201
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\src\main\java = 1679783933104
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\allclasses-index.html = 1680292567381
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\allpackages-index.html = 1680292567381
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\copy.svg = 1680292567435
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\element-list = 1680292567326
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\help-doc.html = 1680292567425
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\index-all.html = 1680292567413
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\index.html = 1680292567413
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\jquery-ui.overrides.css = 1680292567478
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\member-search-index.js = 1680292567397
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\module-search-index.js = 1680292567381
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\overview-tree.html = 1680292567365
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\package-search-index.js = 1680292567397
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\script.js = 1680292567429
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\search.js = 1680292567435
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\stylesheet.css = 1680292567429
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\tag-search-index.js = 1680292567397
+C:\Users\nicos\Desktop\Tecnicatura en programacion UTN\Laboratorio 2\Programacion\maven\Ej_Maven_Exclusion_1\target\site\apidocs\type-search-index.js = 1680292567397
