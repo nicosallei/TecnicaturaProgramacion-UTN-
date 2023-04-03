@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Diagrama_01">
+  <ClassDiagramComponents>
+    <Class name="Cliente" package="diagrama_01" visibility="public" xPosition="30.0" yPosition="411.0">
+      <Fields>
+        <Field name="codigo" type="int" visibility="private"/>
+        <Field name="razonSocial" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="codigo"/>
+          <Argument type="String" name="razonSocial"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCodigo" returnType="int" visibility="public"/>
+        <Method name="setCodigo" returnType="void" visibility="public">
+          <Argument type="int" name="codigo"/>
+        </Method>
+        <Method name="getRazonSocial" returnType="String" visibility="public"/>
+        <Method name="setRazonSocial" returnType="void" visibility="public">
+          <Argument type="String" name="razonSocial"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Comprobante" package="diagrama_01" visibility="public" xPosition="343.0" yPosition="20.0">
+      <Fields>
+        <Field name="tipo" type="char" visibility="private"/>
+        <Field name="numero" type="int" visibility="private"/>
+        <Field name="fecha" type="Fecha" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="char" name="tipo"/>
+          <Argument type="int" name="numero"/>
+          <Argument type="Fecha" name="fecha"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTipo" returnType="char" visibility="public"/>
+        <Method name="setTipo" returnType="void" visibility="public">
+          <Argument type="char" name="tipo"/>
+        </Method>
+        <Method name="getNumero" returnType="int" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="getFecha" returnType="Fecha" visibility="public"/>
+        <Method name="setFecha" returnType="void" visibility="public">
+          <Argument type="Fecha" name="fecha"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Factura" package="diagrama_01" visibility="public" xPosition="512.0" yPosition="427.0">
+      <Fields>
+        <Field name="total" type="float" visibility="private"/>
+        <Field name="mproducto" type="ArrayList&lt;Producto&gt;" visibility="private"/>
+        <Field name="mcliente" type="Cliente" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="AddProducto" returnType="void" visibility="public">
+          <Argument type="Producto" name="producto"/>
+        </Method>
+        <Method name="RemoveProducto" returnType="void" visibility="public">
+          <Argument type="Producto" name="producto"/>
+        </Method>
+        <Method name="GetProducto" returnType="Producto" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="GetProductoCount" returnType="int" visibility="public"/>
+        <Method name="getTotal" returnType="float" visibility="public"/>
+        <Method name="setTotal" returnType="void" visibility="public">
+          <Argument type="float" name="total"/>
+        </Method>
+        <Method name="getMproducto" returnType="ArrayList&lt;Producto&gt;" visibility="public"/>
+        <Method name="setMproducto" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Producto&gt;" name="mproducto"/>
+        </Method>
+        <Method name="getMcliente" returnType="Cliente" visibility="public"/>
+        <Method name="setMcliente" returnType="void" visibility="public">
+          <Argument type="Cliente" name="mcliente"/>
+        </Method>
+        <Method name="mostrarProductos" returnType="void" visibility="public"/>
+        <Method name="mostrar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Fecha" package="diagrama_01" visibility="public" xPosition="30.0" yPosition="20.0">
+      <Fields>
+        <Field name="dia" type="int" visibility="private"/>
+        <Field name="mes" type="int" visibility="private"/>
+        <Field name="anio" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="dia"/>
+          <Argument type="int" name="mes"/>
+          <Argument type="int" name="anio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDia" returnType="int" visibility="public"/>
+        <Method name="setDia" returnType="void" visibility="public">
+          <Argument type="int" name="dia"/>
+        </Method>
+        <Method name="getMes" returnType="int" visibility="public"/>
+        <Method name="setMes" returnType="void" visibility="public">
+          <Argument type="int" name="mes"/>
+        </Method>
+        <Method name="getAnio" returnType="int" visibility="public"/>
+        <Method name="setAnio" returnType="void" visibility="public">
+          <Argument type="int" name="anio"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Main" package="diagrama_01" visibility="public" xPosition="1068.0" yPosition="525.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Producto" package="diagrama_01" visibility="public" xPosition="720.0" yPosition="20.0">
+      <Fields>
+        <Field name="codigo" type="int" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="precio" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="codigo"/>
+          <Argument type="String" name="descripcion"/>
+          <Argument type="float" name="precio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCodigo" returnType="int" visibility="public"/>
+        <Method name="setCodigo" returnType="void" visibility="public">
+          <Argument type="int" name="codigo"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getPrecio" returnType="float" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="float" name="precio"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="diagrama_01.Factura" target="diagrama_01.Producto" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="diagrama_01.Factura" target="diagrama_01.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="mproducto" source="diagrama_01.Factura" target="diagrama_01.Producto" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Producto&gt;"/>
+    <HasRelation name="mcliente" source="diagrama_01.Factura" target="diagrama_01.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="diagrama_01.Comprobante" target="diagrama_01.Fecha" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="fecha" source="diagrama_01.Comprobante" target="diagrama_01.Fecha" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="diagrama_01.Factura" target="diagrama_01.Comprobante"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
