@@ -14,10 +14,11 @@ public class Diagrama_02 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Proveedor prov = new Proveedor(1245,"OSEP");
-        
+   
         Recibo recibo = new Recibo();
-        recibo.setProveedor(prov);
+        recibo.getProveedor().setCodigo(1245);
+        recibo.getProveedor().setRazonSocial("OSEP");
+       
        
         recibo.getFecha().setDia(28);
         recibo.getFecha().setMes(03);

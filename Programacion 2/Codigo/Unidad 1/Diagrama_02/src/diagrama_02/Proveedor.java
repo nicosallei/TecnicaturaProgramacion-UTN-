@@ -17,6 +17,9 @@ public class Proveedor {
         this.razonSocial = razonSocial;
     }
 
+    public Proveedor() {
+    }
+
     
     
     public int getCodigo() {

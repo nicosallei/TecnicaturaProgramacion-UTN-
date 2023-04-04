@@ -1,19 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package diagrama_02;
 
-/**
- *
- * @author nicos
- */
+
 public class Recibo extends Comprobante {
     
-    private Proveedor proveedor;
+    private Proveedor proveedor = new Proveedor();
     private float total;
     private String detalle;
-
+    
     public Recibo() {
     }
 
@@ -24,6 +18,7 @@ public class Recibo extends Comprobante {
     public void setProveedor(Proveedor proveedor) {
         this.proveedor = proveedor;
     }
+
 
     public float getTotal() {
         return total;

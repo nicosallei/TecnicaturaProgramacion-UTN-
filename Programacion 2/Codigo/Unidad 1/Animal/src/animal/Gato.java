@@ -1,6 +1,6 @@
 package animal;
 
-public class Gato extends Animal {
+public  class Gato extends Animal {
 
     @Override
     public void habla() {
