@@ -40,6 +40,7 @@ public class Main {
         for(Integer ca:cant){
             System.out.print("La posicion de los numeros terminados en 4, en el ArrayList son: ");
             System.out.print(ca+" ");
+            
         }
             System.out.println(" ");
         }
