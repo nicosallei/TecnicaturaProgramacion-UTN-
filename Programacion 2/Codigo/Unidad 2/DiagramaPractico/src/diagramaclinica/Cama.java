@@ -1,20 +1,14 @@
-package diagrama02;
-
+package diagramaclinica;
 
 public class Cama {
+
     private Paciente paciente;
 
     public Cama() {
     }
 
-   
-    
-   
-
-   
-    
-    public boolean ocupada(){
-    return this.paciente.getDiagnostico().getTipo().isOperacion();
+    public Cama(Paciente paciente) {
+        this.paciente = paciente;
     }
 
     public Paciente getPaciente() {
@@ -25,6 +19,4 @@ public class Cama {
         this.paciente = paciente;
     }
 
-  
-    
 }

@@ -55,5 +55,10 @@ this.viajes ++;
         System.out.println("Obstactulo esquivado hacia arriba");
     }
     
+      public void mostrar(){
+          System.out.println("La cantidad de viajes que tiene son: "+getViajes());
+       System.out.println("La velocidad promedio es: "+getVelocidadPromedio());
+       System.out.println("La velocidad maxima es: "+getVelocidadMaxima());
+   }
     
 }

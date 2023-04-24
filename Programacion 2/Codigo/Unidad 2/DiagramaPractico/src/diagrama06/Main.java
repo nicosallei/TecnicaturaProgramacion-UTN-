@@ -37,7 +37,7 @@ public class Main {
         detective1.mostrar();
         detective1.mostrarBusqueda(mafioso1);
        
-// TODO code application logic here
+
     }
     
 }

@@ -1,9 +1,11 @@
-package diagrama02;
-
+package diagramaclinica;
 
 public class Tratamiento {
-   
+
     private String texto;
+
+    public Tratamiento() {
+    }
 
     public Tratamiento(String texto) {
         this.texto = texto;
@@ -13,9 +15,6 @@ public class Tratamiento {
         return texto;
     }
 
-    public void setTexto(String texto) {
-        this.texto = texto;
-    }
-    
+
     
 }

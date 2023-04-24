@@ -23,5 +23,10 @@ public class BarcoAVela extends Barco {
     public void esquivarObstaculo() {
         System.out.println("Esquivaste el obstaculo");
     }
+      public void mostrar(){
+       
+       System.out.println("La velocidad promedio es: "+getVelocidadPromedio());
+       System.out.println("La velocidad maxima es: "+getVelocidadMaxima());
+   }
     
 }

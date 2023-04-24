@@ -27,4 +27,12 @@ public class HondaXR25 extends Moto {
     
         System.out.println("El obstaculo se encuentra en :"+metros+" m");
     }
+
+   public void mostrar(){
+       System.out.println("La cantidad de ruedas que tiene es: "+RUEDAS);
+       System.out.println("La velocidad promedio es: "+getVelocidadPromedio());
+       System.out.println("La velocidad maxima es: "+getVelocidadMaxima());
+   }
+    
+    
 }

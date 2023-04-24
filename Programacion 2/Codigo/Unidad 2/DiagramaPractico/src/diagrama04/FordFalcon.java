@@ -24,5 +24,10 @@ public class FordFalcon extends Auto {
         System.out.println("Esquivaste el objeto moviendote hacia la derecha");
     }
     
+      public void mostrar(){
+       System.out.println("La cantidad de ruedas que tiene es: "+RUEDAS);
+       System.out.println("La velocidad promedio es: "+getVelocidadPromedio());
+       System.out.println("La velocidad maxima es: "+getVelocidadMaxima());
+   }
     
 }

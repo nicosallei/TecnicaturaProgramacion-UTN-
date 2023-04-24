@@ -1,23 +1,21 @@
-package diagrama02;
-
+package diagramaclinica;
 
 public class Diagnostico {
-  
+
     private String texto;
     private TipoDiagnostico tipo;
-    private Tratamiento tratamiento;
-
-    public Diagnostico(String texto, TipoDiagnostico tipo,String textoTratamiento) {
-        this.texto = texto;
-        this.tipo = tipo;
-        this.tratamiento =new Tratamiento(textoTratamiento);
-    }
+    private Tratamiento tratamiento = new Tratamiento();
 
     public Diagnostico() {
     }
 
-    public boolean esAlta(){
-    return tipo.isOperacion();
+    public Diagnostico(String texto, TipoDiagnostico tipo) {
+        this.texto = texto;
+        this.tipo = tipo;
+    }
+
+    public Diagnostico(String texto) {
+        this.texto = texto;
     }
     
     public String getTexto() {
@@ -43,5 +41,5 @@ public class Diagnostico {
     public void setTratamiento(Tratamiento tratamiento) {
         this.tratamiento = tratamiento;
     }
-   
+
 }

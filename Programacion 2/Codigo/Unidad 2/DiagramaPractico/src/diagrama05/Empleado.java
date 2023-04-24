@@ -13,6 +13,10 @@ public class Empleado extends Persona {
         this.nro_Legajo = nro_Legajo;
     }
 
+    public Empleado(int dni, String nombre, String apellido, long cuit) {
+        super(dni, nombre, apellido, cuit);
+    }
+
     @Override
     public long getCuit() {
         return cuit;
