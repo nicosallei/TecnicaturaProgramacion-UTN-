@@ -13,6 +13,8 @@ public class Main {
         //factura1.getClie().addTarjeta(new Date(), 24586);
         //factura1.getClie().addTarjeta(new Date(), 68975);
         //factura1.mostrar();
+        
+        
         Factura factura01=new Factura();
         factura01.setFecha(new Date());
         factura01.setClie(new Cliente(38456847,"Juan","Perez",2038456847));

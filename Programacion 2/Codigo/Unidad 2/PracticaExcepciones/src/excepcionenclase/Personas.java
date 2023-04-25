@@ -1,14 +1,15 @@
+
 package excepcionenclase;
 
 import java.util.Scanner;
 
 
-public class Persona {
-   String nombre;
+public class Personas {
+    String nombre;
    public Documento d;
 
-    public Persona(String N,String tipoDoc,String numeroDoc) {
-      
+    public Personas(String N,String tipoDoc,String numeroDoc) {
+ 
         this.nombre=N;
         try{  
         this.d=new Documento(tipoDoc,numeroDoc);
@@ -23,10 +24,6 @@ public class Persona {
             String documento=sc.next();
             new Persona(N,tipo,documento);
         }
-        
-        
     }
-   
-   
    
 }

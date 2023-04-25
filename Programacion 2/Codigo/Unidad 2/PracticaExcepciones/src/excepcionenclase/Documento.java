@@ -1,27 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package excepcionenclase;
 
-/**
- *
- * @author nicos
- */
+
 public class Documento {
+
     private String tipo;
     private String numero;
 
-    public Documento(String tipo,String numero) throws Exception{
-        if(tipo.equals("1"))
-        {
-        //chequear numero
-            if(Integer.valueOf(numero)<90000 && Integer.valueOf(tipo)>50000000)
-            
-        this.tipo = tipo;
-        this.numero = numero;
+    public Documento(String tipo, String numero) throws Exception {
+        if (tipo.equals("1")) {
+            //chequear numero
+            if (Integer.valueOf(numero) < 90000 && Integer.valueOf(tipo) > 50000000) {
+                throw new Exception();
+            }
+
+            this.tipo = tipo;
+            this.numero = numero;
         }
-        
+
     }
 
     public String getTipo() {
@@ -32,17 +27,12 @@ public class Documento {
         this.tipo = tipo;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
-
-   
-
-  
-    
 }
