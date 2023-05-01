@@ -11,6 +11,7 @@ public class ProyectoDeGrado {
     private int tiempoDeRealizacion;
     private String titulo;
     private int viabilidad;
+    private String objetivo;
     private EjecucionDelProyecto proyecto = new EjecucionDelProyecto();
     private Soluciones soluciones;
     private List<Estudiante> estudiantes = new ArrayList();
@@ -25,14 +26,24 @@ public class ProyectoDeGrado {
     public void setEstudiantes(List<Estudiante> estudiantes) {
         this.estudiantes = estudiantes;
     }
-
-    public ProyectoDeGrado(String alcance, int costo, String planDeProyecto, String titulo, int viabilidad) {
+    public ProyectoDeGrado(String alcance, int costo, String objetivo, String planDeProyecto, int tiempoDeRealizacion, String titulo, int viabilidad) {
         this.alcance = alcance;
         this.costo = costo;
+        this.objetivo = objetivo;
         this.planDeProyecto = planDeProyecto;
+        this.tiempoDeRealizacion = tiempoDeRealizacion;
         this.titulo = titulo;
         this.viabilidad = viabilidad;
     }
+
+    public String getObjetivo() {
+        return objetivo;
+    }
+
+    public void setObjetivo(String objetivo) {
+        this.objetivo = objetivo;
+    }
+    
 public void addEstudiante(Estudiante estudiante){
 this.estudiantes.add(estudiante);
 }

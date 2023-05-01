@@ -9,6 +9,9 @@ public class Universidad {
     private String diferentesCarreras;
     private String privada;
     private String publica;
+    private Region region;
+    private PersonalDocente personalDocente;
+    private Estudiante estudiante;
     
     private List<Region> regiones = new ArrayList();
     private List<Estudiante> estudiantes = new ArrayList();
@@ -22,29 +25,43 @@ public class Universidad {
         this.publica = publica;
         this.recoleccionDeInformacion = recoleccionDeInformacion;
     }
+     public Universidad(String cunaDelConocimiento, String diferentesCarreras, String privada, String publica) {
+        this.cunaDelConocimiento = cunaDelConocimiento;
+        this.diferentesCarreras = diferentesCarreras;
+        this.privada = privada;
+        this.publica = publica;
+        this.recoleccionDeInformacion = new RecoleccionDeInformacion();
+    }
 
     public Universidad() {
     }
 
     public void addRegion (Region region){
     this.regiones.add(region);
+    region.getUniversidades().add(this);
     }
     public void removeRegion (int lugar){
     this.regiones.remove(lugar);
+    region.getUniversidades().remove(lugar);
+            
     }
     
     public void addEstudiante(Estudiante estudiante){
     this.estudiantes.add(estudiante);
+    estudiante.getUniversidades().add(this);
     }
     public void removeEstudiante(int lugar){
     this.estudiantes.remove(lugar);
+    estudiante.getUniversidades().remove(lugar);
     }
     
     public void addPersonalDocente(PersonalDocente personalDocente){
     this.addPersonalDocente(personalDocente);
+    personalDocente.getUniversidades().add(this);
     }
     public void removePersonalDocente(int lugar){
     this.personalDocentes.remove(lugar);
+    personalDocente.getUniversidades().remove(lugar);
     }
     
     public String getCunaDelConocimiento() {

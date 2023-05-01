@@ -9,6 +9,7 @@ public class Region {
     private String nivelGrupal;
     private String nivelPersonal;
     private String parteEspecificaDelPais;
+    private Universidad universidad;
     private ArrayList<Problemas> problemas = new ArrayList();
     private List<Necesidades> necesidades = new ArrayList();
     private List<Universidad> universidades = new ArrayList();
@@ -37,9 +38,11 @@ public class Region {
    }
    public void addUniversidades (Universidad universidad){
    this.universidades.add(universidad);
+   universidad.getRegiones().add(this);
    } 
    public void removeUniversidades(int lugar){
    this.universidades.remove(lugar);
+   universidad.getRegiones().remove(lugar);
    }
 
     public String getAspectosSocioCulturales() {

@@ -6,17 +6,24 @@ import java.util.List;
 
 
 public class Estudiante {
+    private String nombreYApellido;
 private Soluciones soluciones;    
-private int aspiranteAGrado;
+private String aspiranteAGrado;
+private Universidad universidad;
+private PersonalDocente personalDocente;
 private List<EstudianteSoluciones> estudianteSoluciones = new ArrayList(); 
 private List<Universidad> universidades = new ArrayList();
 private ProyectoDeGrado proyectoDeGrado;
 private EjecucionDelProyecto ejecuccionDelProyecto;
 private List<PersonalDocente> personalDocentes = new ArrayList();
 
-    public Estudiante(int aspiranteAGrado,EstudianteSoluciones estudianteSoluciones) {
+   
+
+    public Estudiante(String nombreYapellido,String aspiranteAGrado, Universidad universidad, ProyectoDeGrado proyectoDeGrado) {
+        this.nombreYApellido=nombreYapellido;
         this.aspiranteAGrado = aspiranteAGrado;
-        this.estudianteSoluciones.add(estudianteSoluciones);
+        this.universidad = universidad;
+        this.proyectoDeGrado = proyectoDeGrado;
     }
 
     public Estudiante() {
@@ -28,9 +35,11 @@ private List<PersonalDocente> personalDocentes = new ArrayList();
     }
     public void addUniversidad(Universidad universidad){
     this.universidades.add(universidad);
+    universidad.getEstudiantes().add(this);
     }
     public void removeUniversidad(int lugar){
     this.universidades.remove(lugar);
+    universidad.getEstudiantes().remove(lugar);
     }
     public void removeEstudianteSolucion(int lugar){
     this.estudianteSoluciones.remove(lugar);
@@ -77,16 +86,38 @@ private List<PersonalDocente> personalDocentes = new ArrayList();
         this.universidades = universidades;
     }
 
+    public String getNombreYApellido() {
+        return nombreYApellido;
+    }
 
+    public void setNombreYApellido(String nombreYApellido) {
+        this.nombreYApellido = nombreYApellido;
+    }
 
-    
-    
-    public int getAspiranteAGrado() {
+    public Soluciones getSoluciones() {
+        return soluciones;
+    }
+
+    public void setSoluciones(Soluciones soluciones) {
+        this.soluciones = soluciones;
+    }
+
+    public String getAspiranteAGrado() {
         return aspiranteAGrado;
     }
 
-    public void setAspiranteAGrado(int aspiranteAGrado) {
+    public void setAspiranteAGrado(String aspiranteAGrado) {
         this.aspiranteAGrado = aspiranteAGrado;
+    }
+
+   
+
+    public PersonalDocente getPersonalDocente() {
+        return personalDocente;
+    }
+
+    public void setPersonalDocente(PersonalDocente personalDocente) {
+        this.personalDocente = personalDocente;
     }
 
     public List<EstudianteSoluciones> getEstudianteSoluciones() {

@@ -12,9 +12,11 @@ import java.util.List;
  * @author nicos
  */
 public class PersonalDocente {
-    private String conocimiento;
+    private String nombre;
     private String experiencia;
     private int trayectoria;
+    private Universidad universidad;
+    
     
     private List<Universidad> universidades = new ArrayList();
     private EjecucionDelProyecto ejercucionDelProyecto;
@@ -25,23 +27,35 @@ public class PersonalDocente {
     }
 
     public PersonalDocente(String conocimiento, String experiencia, int trayectoria) {
-        this.conocimiento = conocimiento;
+        this.nombre = conocimiento;
         this.experiencia = experiencia;
         this.trayectoria = trayectoria;
     }
 public void addUniversidad (Universidad universidad){
 this.universidades.add(universidad);
+universidad.getPersonalDocentes().add(this);
 }
 public void removeUniversidad(int lugar){
 this.universidades.remove(lugar);
+universidad.getPersonalDocentes().remove(lugar);
 }
-    public String getConocimiento() {
-        return conocimiento;
+
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setConocimiento(String conocimiento) {
-        this.conocimiento = conocimiento;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
+
+    public Universidad getUniversidad() {
+        return universidad;
+    }
+
+    public void setUniversidad(Universidad universidad) {
+        this.universidad = universidad;
+    }
+    
 
     public String getExperiencia() {
         return experiencia;
