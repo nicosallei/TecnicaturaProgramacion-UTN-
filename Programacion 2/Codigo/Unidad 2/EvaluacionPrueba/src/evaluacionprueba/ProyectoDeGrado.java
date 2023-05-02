@@ -115,5 +115,7 @@ this.estudiantes.remove(lugar);
     public void setSoluciones(Soluciones soluciones) {
         this.soluciones = soluciones;
     }
-
+public String toString() {
+        return "El proyecto consiste en " + objetivo + ". Es de alcance " + alcance + ". Tiene un costo de $" + costo + ". utilizando el " + planDeProyecto + ". Tiene un tiempo de Realizacion de " + tiempoDeRealizacion + " anios. Con una viabilidad del " + viabilidad + "%";
+    }
 }

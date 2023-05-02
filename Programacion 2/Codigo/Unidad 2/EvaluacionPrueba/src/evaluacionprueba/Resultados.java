@@ -25,12 +25,22 @@ public class Resultados {
     }
 
    
-    
-  public int efectosPositivosyNegativos(){
-  
-  return 8;
-  }
-  public int medidasDeSstisfaccionDeDiferentesAspectos(){
-  return 10;
-  }
+  public String efectosPositivosyNegativos() {
+        if (implementacionFinalizada.equalsIgnoreCase("activo")) {
+            return "Produce efectos Positivos en la sociedad";
+        } else {
+            return "Produce efectos Negativos en la sociedad";
+        }
+    }
+
+    public String medidasDeSatisfaccionDeDiferentesAspectos() {
+        if (implementacionFinalizada.equalsIgnoreCase("aprobado")) {
+            return "Aprobado Satisfactoriamente";
+        } if (implementacionFinalizada.equalsIgnoreCase("desaprobado")){
+            return "Desaprobado";
+        } else {
+            return "No entregado";
+        }   
+ 
+}
 }

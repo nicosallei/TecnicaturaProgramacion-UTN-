@@ -36,7 +36,10 @@ public class RecoleccionDeInformacion extends InterfazIngresoInformacion {
         this.datosDeLosDirecamenteInterezados = datosDeLosDirecamenteInterezados;
     }
 
-  
+   public String conocer() {
+        return "Datos de los afectados: " + datosDeLosAfectados + "\n" +
+                "Datos de los directamente Interesados: " + datosDeLosDirecamenteInterezados;
+    }
     
     
     

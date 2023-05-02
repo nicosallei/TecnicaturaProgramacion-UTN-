@@ -6,7 +6,7 @@ import java.util.List;
 
 public class EjecucionDelProyecto {
 private String proyectoDeGradoTerminado;
-private int recursosdisponibles;
+private int recursosDisponibles;
 private Resultados restulado = new Resultados();
 private List<PersonalDocente> personalDocente=new ArrayList();
 private List<Estudiante> estudiante=new ArrayList();
@@ -66,13 +66,32 @@ this.personalDocente.remove(lugar);
 
 
 
-    public int getRecursosdisponibles() {
-        return recursosdisponibles;
+    public int getRecursosDisponibles() {
+        return recursosDisponibles;
     }
 
-    public void setRecursosdisponibles(int recursosdisponibles) {
-        this.recursosdisponibles = recursosdisponibles;
+    public void setRecursosDisponibles(int recursosdisponibles) {
+        this.recursosDisponibles = recursosdisponibles;
     }
 
+       public String comenzarDesarrolloDelProyecto(Estudiante estudiante) {
+        if (this.recursosDisponibles > estudiante.getProyectoDeGrado().getCosto()) {
+            restulado.setImplementacionFinalizada("Activo");
+            return restulado.efectosPositivosyNegativos();
+        } else {
+            restulado.setImplementacionFinalizada("No Activo");
+            return restulado.efectosPositivosyNegativos();
+        }
+    }
+
+    public String FinalizarDesarrolloDelProyecto() {
+        if (proyectoDeGradoTerminado.equalsIgnoreCase("Terminado")) {
+            restulado.setImplementacionFinalizada("aprobado");
+            return restulado.medidasDeSatisfaccionDeDiferentesAspectos();
+        } else {
+            restulado.setImplementacionFinalizada("desaprobado");
+            return restulado.medidasDeSatisfaccionDeDiferentesAspectos();
+        }
+    }
 
 }

@@ -22,7 +22,7 @@ private List<PersonalDocente> personalDocentes = new ArrayList();
     public Estudiante(String nombreYapellido,String aspiranteAGrado, Universidad universidad, ProyectoDeGrado proyectoDeGrado) {
         this.nombreYApellido=nombreYapellido;
         this.aspiranteAGrado = aspiranteAGrado;
-        this.universidad = universidad;
+        this.universidades.add(universidad);
         this.proyectoDeGrado = proyectoDeGrado;
     }
 
