@@ -37,5 +37,7 @@ public void addIngresoInformacion(InterfazIngresoInformacion informacion){
         this.ingresoInformacion = ingresoInformacion;
     }
    
-    
+    public String insatisfaccion() {
+        return "La insatisfaccion que existe es NO poder " + definir;
+    }
 }

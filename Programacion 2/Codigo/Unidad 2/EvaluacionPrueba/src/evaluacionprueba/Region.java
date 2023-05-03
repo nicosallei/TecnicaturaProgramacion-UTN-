@@ -101,5 +101,8 @@ public class Region {
         this.universidades = universidades;
     }
     
+    public String cotidianidad(){
+    return "es una region feliz";
+    }
     
 }

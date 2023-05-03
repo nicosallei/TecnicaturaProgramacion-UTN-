@@ -47,5 +47,11 @@ public class Recopilacion extends RecoleccionDeInformacion {
     public void setDatosMayorUrgencia(String datosMayorUrgencia) {
         this.datosMayorUrgencia = datosMayorUrgencia;
     }
-    
+    public String filtrar() {
+        return "Datos de Mayor Favorabilidad: " + datosMayorFavorabilidad;
+    }
+
+    public String priorizar() {
+        return "Datos de Mayor Urgencia: " + datosMayorUrgencia;
+    }
 }

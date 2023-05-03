@@ -127,6 +127,21 @@ public class Universidad {
     public void setRecoleccionDeInformacion(RecoleccionDeInformacion recoleccionDeInformacion) {
         this.recoleccionDeInformacion = recoleccionDeInformacion;
     }
-    
+    public String ayudarSociedad(RecoleccionDeInformacion reco){
+    return "La universidad ayuda: "+reco.getDatosDeLosAfectados();
+    }
+    public void capacitarEstudiantes(){
+        System.out.println("La universidad capacita a los siguientes estudiantes: ");
+        for (Estudiante estu : estudiantes) {
+            System.out.println("estu.getNombreYApellido()");
+        }
+        
+    }
+    public String desarollo(){
+    return"La universidad tiene las siguientes carreras: "+diferentesCarreras;
+    }
+    public String investigacion(){
+    return "La universidad esta capacitada para investigar";
+    }
     
 }

@@ -104,6 +104,10 @@ universidad.getPersonalDocentes().remove(lugar);
     public void setRecopilacion(Recopilacion recopilacion) {
         this.recopilacion = recopilacion;
     }
-    
-    
+    public String evaluar(){
+        return "El profesor " + nombre + " esta evaluando el proyecto del alumno " + estudiante;
+    }
+    public String orientar() {
+        return "El profesor " + nombre + " orienta al alumno: " + estudiante;
+    }
 }

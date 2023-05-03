@@ -41,5 +41,7 @@ public class Soluciones {
     public void setEstudianteSoluciones(List<EstudianteSoluciones> estudianteSoluciones) {
         this.estudianteSoluciones = estudianteSoluciones;
     }
-    
+     public String escoger() {
+        return "El estudiante  escogio la alternativa: " + alternativas;
+    }
 }

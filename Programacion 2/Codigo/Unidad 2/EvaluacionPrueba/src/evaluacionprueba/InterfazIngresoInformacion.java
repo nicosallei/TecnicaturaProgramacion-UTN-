@@ -39,6 +39,8 @@ public class InterfazIngresoInformacion {
     public void setPlataformaDeSoftware(byte plataformaDeSoftware) {
         this.plataformaDeSoftware = plataformaDeSoftware;
     }
-    
+    public String registroDeFormularioEnLinea() {
+        return formulariosEnLinea + ". " + comentariosAbiertosEnLinea;
+    }
     
 }

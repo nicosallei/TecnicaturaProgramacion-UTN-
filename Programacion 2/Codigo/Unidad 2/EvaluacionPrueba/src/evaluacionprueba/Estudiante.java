@@ -128,4 +128,15 @@ private List<PersonalDocente> personalDocentes = new ArrayList();
         this.estudianteSoluciones = estudianteSoluciones;
     }
 
+    public String estudiar(Universidad uni) {
+        return "El estudiante " + nombreYApellido + " estudia la carrera " + uni.getDiferentesCarreras();
+    }
+
+    public String formarse() {
+        return "El estudiante " + nombreYApellido + " se esta formando para el titulo " + proyectoDeGrado.getTitulo();
+    }
+
+    public String irALaUniversidad(Universidad uni) {
+        return "El estudiante " + nombreYApellido + " va a la " + uni.getCunaDelConocimiento();
+    }
 }

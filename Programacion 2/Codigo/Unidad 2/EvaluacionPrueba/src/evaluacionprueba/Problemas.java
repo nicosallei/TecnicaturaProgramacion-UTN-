@@ -36,12 +36,7 @@ public class Problemas {
     public void setIngresoInformacion(ArrayList<InterfazIngresoInformacion> ingresoInformacion) {
         this.ingresoInformacion = ingresoInformacion;
     }
-    
-    
-   
-
-   
-
-   
-    
+      public String efectosIndeseables() {
+        return definir;
+    }
 }
