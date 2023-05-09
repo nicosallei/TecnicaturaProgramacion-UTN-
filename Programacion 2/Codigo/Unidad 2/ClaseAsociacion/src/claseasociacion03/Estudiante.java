@@ -30,7 +30,8 @@ public class Estudiante {
 
     public void agregarInscripcion(Inscripcion inscripcion) {
         inscripciones.add(inscripcion);
-       inscripcion.getMateria().getInscripciones().add(inscripcion);
+        inscripcion.getMateria().getInscripciones().add(inscripcion);
     }
+
 
 }

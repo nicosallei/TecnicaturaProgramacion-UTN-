@@ -12,7 +12,7 @@ import java.util.List;
  * @author nicos
  */
 public class Materia {
-   private String nombre;
+  private String nombre;
     private List<Estudiante> estudiantes;
 
     public Materia(String nombre) {
@@ -31,5 +31,6 @@ public class Materia {
     public List<Estudiante> getEstudiantes() {
         return estudiantes;
     }
+
  
 }

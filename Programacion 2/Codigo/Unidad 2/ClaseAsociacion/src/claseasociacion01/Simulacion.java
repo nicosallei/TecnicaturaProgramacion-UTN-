@@ -14,7 +14,7 @@ public class Simulacion {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Materia matematicas = new Materia("Matematicas");
+       Materia matematicas = new Materia("Matematicas");
         Materia fisica = new Materia("Fisica");
         Materia quimica = new Materia("Quimica");
 
@@ -40,6 +40,7 @@ public class Simulacion {
         for (Materia materia : juan.getMaterias()) {
             System.out.println(materia.getNombre());
         }
+
 
     }
     

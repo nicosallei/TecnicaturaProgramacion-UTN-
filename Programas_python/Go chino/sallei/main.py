@@ -1,4 +1,4 @@
-from tkinter.simpledialog import askfloat
+
 import pygame
 import sys
 

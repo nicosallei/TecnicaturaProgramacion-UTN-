@@ -38,6 +38,7 @@ public class Asociacion {
             System.out.println(inscripcion.getEstudiante().getNombre() + ": " + inscripcion.getNota());
         }
 
+
     }
     
 }

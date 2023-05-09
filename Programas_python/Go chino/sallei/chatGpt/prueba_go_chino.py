@@ -22,8 +22,8 @@ pygame.display.set_caption("Go Chinese")
 clock = pygame.time.Clock()
 
 # Carga las imágenes de las piedras
-black_stone_img = pygame.image.load("sallei/chatGpt/black_stone.png").convert_alpha()
-white_stone_img = pygame.image.load("sallei/chatGpt/white_stone.png").convert_alpha()
+black_stone_img = pygame.image.load("black_stone.png").convert_alpha()
+white_stone_img = pygame.image.load("white_stone.png").convert_alpha()
 
 # Crea el tablero de juego
 board = [[None for j in range(BOARD_SIZE)] for i in range(BOARD_SIZE)]
@@ -137,6 +137,7 @@ def play_game():
         clock.tick(FPS)
         
         # Función para realizar una jugada
+        """
 def make_move(x, y):
     global current_player
     if is_valid_move(x, y):
@@ -145,59 +146,7 @@ def make_move(x, y):
             current_player = WHITE
         else:
             current_player = BLACK
-
-
-    """
-# Matriz para representar el tablero de Go 
-board = np.zeros((19, 19))
-
-# Variables para llevar el registro de los jugadores
-BLACK = 1
-WHITE = 2
-current_player = BLACK
-
-# Función para obtener los vecinos de una piedra en el tablero
-def get_neighbors(x, y):
-    neighbors = []
-    if x > 0:
-        neighbors.append((x - 1, y))
-    if x < 18:
-        neighbors.append((x + 1, y))
-    if y > 0:
-        neighbors.append((x, y - 1))
-    if y < 18:
-        neighbors.append((x, y + 1))
-    return neighbors
-
-# Función para verificar si una piedra puede ser colocada en una posición
-def is_valid_move(x, y):
-    if board[x][y] != 0:
-        return False
-    for neighbor in get_neighbors(x, y):
-        if board[neighbor[0]][neighbor[1]] == current_player:
-            return True
-    return False
-
-# Función para realizar una jugada
-def make_move(x, y):
-    if is_valid_move(x, y):
-        board[x][y] = current_player
-        global current_player
-        if current_player == BLACK:
-            current_player = WHITE
-        else:
-            current_player = BLACK
-
-# Función para contar la cantidad de piedras de un jugador en el tablero
-def count_stones(player):
-    count = 0
-    for row in board:
-        for stone in row:
-            if stone == player:
-                count += 1
-    return count
- 
-"""       
+   """
         
         
 

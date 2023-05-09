@@ -1,20 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package claseasociacion02;
 
-/**
- *
- * @author nicos
- */
+
 public class Asociacion {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-                Estudiante estudiante1 = new Estudiante("Juan");
+        Estudiante estudiante1 = new Estudiante("Juan");
         Estudiante estudiante2 = new Estudiante("Maria");
 
         Materia materia1 = new Materia("Matemáticas");
@@ -33,6 +25,7 @@ public class Asociacion {
         for (Estudiante estudiante : materia1.getEstudiantes()) {
             System.out.println(estudiante.getNombre());
         }
+
 
     }
     
