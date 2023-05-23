@@ -3,7 +3,7 @@ import pygame
 import sys
 
 from clases.chino import Main
-from clases.prueba import Prueba
+from clases.prueba import Principal
 
 
 #from sallei.clases.suelo import Suelo
@@ -106,8 +106,8 @@ while en_juego:
         en_partida_contra_jugador=False
         en_inicio=True
         en_partida_contra_pc=False
-        sc=Prueba()
-        sc.run()
+        sc=Principal()
+        sc.ejecutar()
         
                 
         pygame.display.flip()
