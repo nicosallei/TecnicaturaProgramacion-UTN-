@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import javax.swing.SwingUtilities;
 import vistas.Menu;
 import vistas.PanelAlumnos;
+
 import vistas.PanelCursados;
 import vistas.PanelMaterias;
 

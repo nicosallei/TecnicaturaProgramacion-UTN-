@@ -10,9 +10,11 @@ import javax.swing.table.DefaultTableModel;
 import modelos.Alumno;
 import modelos.Cursado;
 import modelos.Materia;
+
 import vistas.AgregarCursado;
 import vistas.EditarCursado;
 import vistas.Menu;
+
 import vistas.PanelCursados;
 
 /**

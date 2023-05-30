@@ -9,8 +9,8 @@ from clases.prueba import Principal
 #from sallei.clases.suelo import Suelo
 
 #variables ventana
-ancho_pantalla=800
-alto_pantalla=600
+ancho_pantalla=563
+alto_pantalla=563
 color_fondo=(34,121,153) 
 size=(ancho_pantalla,alto_pantalla)
 clock=pygame.time.Clock() #optimizar las animaciones

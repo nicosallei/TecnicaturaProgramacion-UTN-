@@ -24,8 +24,8 @@ class Principal():
     def __init__(self, komi=2.5):
         pygame.init()
 
-        ANCHO_PANTALLA = 800
-        ALTO_PANTALLA = 600
+        ANCHO_PANTALLA = 563
+        ALTO_PANTALLA = 563
 
         self.sprites = pygame.sprite.Group()
         self.arreglo_sprites = [[0 for _ in range(19)] for _ in range(19)]
