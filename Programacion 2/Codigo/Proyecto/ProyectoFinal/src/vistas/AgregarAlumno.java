@@ -156,12 +156,13 @@ public class AgregarAlumno extends javax.swing.JFrame {
     }
     dateChooser.setLocale(new java.util.Locale("lt", "", ""));
 
-    btnAgregar.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+    btnAgregar.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
     btnAgregar.setText("Agregar");
 
+    btnCancelar.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
     btnCancelar.setText("Cancelar");
 
-    jPanel2.setBackground(new java.awt.Color(153, 51, 0));
+    jPanel2.setBackground(new java.awt.Color(255, 51, 51));
 
     jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
     jLabel8.setText("Agregar Nuevo Alumno");
@@ -216,9 +217,9 @@ public class AgregarAlumno extends javax.swing.JFrame {
             .addGap(25, 25, 25))
         .addGroup(jPanel1Layout.createSequentialGroup()
             .addGap(159, 159, 159)
-            .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGap(68, 68, 68)
-            .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGap(140, 140, 140)
+            .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
     );
@@ -246,13 +247,10 @@ public class AgregarAlumno extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                 .addComponent(jLabel4)
                 .addComponent(txtDni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGap(36, 36, 36)
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                    .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(36, 36, 36)
-                    .addComponent(btnAgregar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addComponent(btnCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnAgregar, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE))
             .addGap(61, 61, 61))
     );
 

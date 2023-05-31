@@ -71,11 +71,11 @@ public class ControladorMaterias implements ActionListener {
 
         if (camposVacios() == false) {
             JOptionPane.showMessageDialog(null, "Campos Vacios!");
-        } else if (materia.materiaExist(Integer.valueOf(agregarMateria.getTxtCodMateria().getText())) == true) {
+        } else if (materia.materiaExist(Integer.parseInt(agregarMateria.getTxtCodMateria().getText())) == true) {
             JOptionPane.showMessageDialog(null, "La Materia Con Codigo " + agregarMateria.getTxtCodMateria().getText() + " Ya Existe!");
         } else {
 
-            materia.setCodMateria(Integer.valueOf(agregarMateria.getTxtCodMateria().getText()));
+            materia.setCodMateria(Integer.parseInt(agregarMateria.getTxtCodMateria().getText()));
             materia.setNombreMateria(agregarMateria.getTxtNombre().getText());
             
 
@@ -99,7 +99,7 @@ public class ControladorMaterias implements ActionListener {
             JOptionPane.showMessageDialog(null, "Campos Vacios!");
         } else {
 
-            materia.setCodMateria(Integer.valueOf(editarMateria.getTxtMatCode().getText()));
+            materia.setCodMateria(Integer.parseInt(editarMateria.getTxtMatCode().getText()));
             materia.setNombreMateria(editarMateria.getTxtNombre().getText());
             
 
@@ -140,8 +140,6 @@ public class ControladorMaterias implements ActionListener {
         } else {
             editarMateria.getTxtMatCode().setText(panelMaterias.getTblMaterias().getValueAt(fila, 0).toString());
             editarMateria.getTxtNombre().setText(panelMaterias.getTblMaterias().getValueAt(fila, 1).toString());
-            editarMateria.getCbcProfesores().setSelectedItem(panelMaterias.getTblMaterias().getValueAt(fila, 2).toString());
-
             editarMateria.setVisible(true);
         }
     }
@@ -156,7 +154,6 @@ public class ControladorMaterias implements ActionListener {
         for (int i = 0; i < lista.size(); i++) {
             fila[0] = lista.get(i).getCodMateria();
             fila[1] = lista.get(i).getNombreMateria();
-            fila[2] = lista.get(i).getDniProfesor();
 
             modelo.addRow(fila);
         }
@@ -174,23 +171,13 @@ public class ControladorMaterias implements ActionListener {
     
 
     public boolean camposVacios() {
-        if (agregarMateria.getTxtCodMateria().getText().isEmpty()
-                || agregarMateria.getTxtNombre().getText().isEmpty()
-                || agregarMateria.getCbxProfesores().getSelectedItem().equals("Seleccionar Profesor")) {
-            return false;
-        } else {
-            return true;
-        }
+        return !(agregarMateria.getTxtCodMateria().getText().isEmpty()
+                || agregarMateria.getTxtNombre().getText().isEmpty());
     }
 
     public boolean camposVaciosEditar() {
-        if (editarMateria.getTxtMatCode().getText().isEmpty()
-                || editarMateria.getTxtNombre().getText().isEmpty()
-                || editarMateria.getCbcProfesores().getSelectedItem().equals("Seleccionar Profesor")) {
-            return false;
-        } else {
-            return true;
-        }
+        return !(editarMateria.getTxtMatCode().getText().isEmpty()
+                || editarMateria.getTxtNombre().getText().isEmpty());
     }
 
     

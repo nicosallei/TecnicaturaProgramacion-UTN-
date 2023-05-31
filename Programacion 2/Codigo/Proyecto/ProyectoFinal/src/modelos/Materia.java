@@ -11,7 +11,6 @@ public class Materia {
 
     private int codMateria;
     private String nombreMateria;
-    private int dniProfesor;
     private MateriaDAO materiaDAO = new MateriaDAO();
 
     public Materia() {
@@ -31,14 +30,6 @@ public class Materia {
 
     public void setNombreMateria(String nombreMateria) {
         this.nombreMateria = nombreMateria;
-    }
-
-    public int getDniProfesor() {
-        return dniProfesor;
-    }
-
-    public void setDniProfesor(int dniProfesor) {
-        this.dniProfesor = dniProfesor;
     }
     
  //CRUD

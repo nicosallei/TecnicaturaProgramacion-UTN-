@@ -15,10 +15,10 @@ import modelos.Materia;
  */
 public class MateriaDAO {
 
-    private final String SQL_INSERT = "INSERT INTO materia (mat_cod,mat_nombre, mat_prof_dni) VALUES (?,?,?)";
+    private final String SQL_INSERT = "INSERT INTO materia (mat_cod,mat_nombre) VALUES (?,?)";
     private final String SQL_SELECT = "SELECT * FROM materia";
     private final String SQL_DELETE = "DELETE FROM materia WHERE mat_cod=?";
-    private final String SQL_UPDATE = "UPDATE materia SET mat_nombre =?, mat_prof_dni=? WHERE mat_cod=?";
+    private final String SQL_UPDATE = "UPDATE materia SET mat_nombre =? WHERE mat_cod=?";
     private final String SQL_FIND = "SELECT * FROM materia WHERE mat_cod =?";
 
     public boolean create(Materia materia) {
@@ -35,7 +35,6 @@ public class MateriaDAO {
 
             ps.setInt(1, materia.getCodMateria());
             ps.setString(2, materia.getNombreMateria());
-            ps.setInt(3, materia.getDniProfesor());
 
             ps.executeUpdate();
             /*El método executeUpdate se utiliza para ejecutar sentencias DML (Data
@@ -81,8 +80,7 @@ public class MateriaDAO {
 
                 materia.setCodMateria(rs.getInt(1));
                 materia.setNombreMateria(rs.getString(2));
-                materia.setDniProfesor(rs.getInt(3));
-
+ 
                 listaMaterias.add(materia);
 
             }
@@ -108,9 +106,8 @@ public class MateriaDAO {
             ps = conn.prepareStatement(SQL_UPDATE);
 
             ps.setString(1, materia.getNombreMateria());
-            ps.setInt(2, materia.getDniProfesor());
 
-            ps.setInt(3, materia.getCodMateria());
+            ps.setInt(2, materia.getCodMateria());
             ps.executeUpdate();
             System.out.println("Actualizado Con Exito");
             return true;

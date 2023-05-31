@@ -118,16 +118,19 @@ public class Menu extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
-        jPanel2.setBackground(new java.awt.Color(153, 51, 0));
+        jPanel2.setBackground(new java.awt.Color(255, 51, 51));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("SGAPROG2");
 
+        jB_Alumnos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/colegial.png"))); // NOI18N
         jB_Alumnos.setText("Alumnos");
 
+        jB_Materias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/libros-de-texto.png"))); // NOI18N
         jB_Materias.setText("Materias");
 
+        jB_Cursado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/curso.png"))); // NOI18N
         jB_Cursado.setText("Cursado");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
