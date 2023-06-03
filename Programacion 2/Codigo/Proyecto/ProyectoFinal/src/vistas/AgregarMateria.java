@@ -5,7 +5,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author SkylakeFrost
+ * @author Nicolas sallei
  */
 public class AgregarMateria extends javax.swing.JFrame {
 
@@ -74,9 +74,9 @@ public class AgregarMateria extends javax.swing.JFrame {
 
         jTextField1.setText("jTextField1");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 
         jPanel2.setBackground(new java.awt.Color(255, 51, 51));
 

@@ -10,12 +10,12 @@ import javax.swing.table.DefaultTableModel;
 import modelos.Alumno;
 import modelos.Cursado;
 import modelos.Materia;
-
 import vistas.AgregarCursado;
 import vistas.EditarCursado;
 import vistas.Menu;
-
 import vistas.PanelCursados;
+
+
 
 /**
  * Nicolas sallei 
@@ -34,17 +34,15 @@ public class ControladorCursado implements ActionListener {
 
     @SuppressWarnings("LeakingThisInConstructor")
     public ControladorCursado(Menu menu, PanelCursados panelCursados) {
-
-        this.menu = menu;
+        
         this.panelCursados = panelCursados;
-
+        this.menu = menu;
+        
         this.panelCursados.getBtnNuevo().addActionListener(this);
         this.panelCursados.getBtnEliminar().addActionListener(this);
         this.panelCursados.getBtnEditar().addActionListener(this);
-
         this.agregarCursado.getBtnAgregar().addActionListener(this);
         this.agregarCursado.getBtnCancelar().addActionListener(this);
-
         this.editarCursado.getBtnAgregar().addActionListener(this);
         this.editarCursado.getBtnCancelar().addActionListener(this);
     }
@@ -76,14 +74,14 @@ public class ControladorCursado implements ActionListener {
     public void agregar() {
         if (revisarCampos() == false) {
             JOptionPane.showMessageDialog(null, "Campos Vacios, Revise Alumno, Materia o Nota");
-        } else if (val.validarNota(Double.valueOf(agregarCursado.getTxtNota().getText())) == false) {
+        } else if (val.validarNota(Double.parseDouble(agregarCursado.getTxtNota().getText())) == false) {
             JOptionPane.showMessageDialog(null, "La Nota Debe Ser Un Valor Entre 1 y 10");
         } else if (val.notaContieneLetras(agregarCursado.getTxtNota().getText()) == false) {
             JOptionPane.showMessageDialog(null, "Nota Solo Puede Contener Numeros!");
         } else {
             cursado.setAlumnoDni(splitearString(agregarCursado.getCbxAlumnos().getSelectedItem().toString()));
             cursado.setCodigoMateria(splitearString(agregarCursado.getCbxMaterias().getSelectedItem().toString()));
-            cursado.setNota(Double.valueOf(agregarCursado.getTxtNota().getText()));
+            cursado.setNota(Double.parseDouble(agregarCursado.getTxtNota().getText()));
 
             if (cursado.createCursado(cursado) == true) {
 
@@ -100,7 +98,7 @@ public class ControladorCursado implements ActionListener {
     }
 
     public void editar() {
-        if (val.validarNota(Double.valueOf(editarCursado.getTxtNota().getText())) == false) {
+        if (val.validarNota(Double.parseDouble(editarCursado.getTxtNota().getText())) == false) {
             JOptionPane.showMessageDialog(null, "La Nota Debe Ser Un Valor Entre 1 y 10");
         } else if (val.notaContieneLetras(editarCursado.getTxtNota().getText()) == false) {
             JOptionPane.showMessageDialog(null, "Nota Solo Puede Contener Numeros!");
@@ -108,7 +106,7 @@ public class ControladorCursado implements ActionListener {
 
             cursado.setAlumnoDni(splitearString(editarCursado.getCbxAlumnos().getSelectedItem().toString()));
             cursado.setCodigoMateria(splitearString(editarCursado.getCbxMaterias().getSelectedItem().toString()));
-            cursado.setNota(Double.valueOf(editarCursado.getTxtNota().getText()));
+            cursado.setNota(Double.parseDouble(editarCursado.getTxtNota().getText()));
 
             if (cursado.updateCursado(cursado) == true) {
 
@@ -147,7 +145,6 @@ public class ControladorCursado implements ActionListener {
         } else {
             cargarComboBoxEditar();
             editarCursado.getTxtNota().setText(panelCursados.getTblCursados().getValueAt(fila, 2).toString());
-
             editarCursado.setVisible(true);
         }
     }
@@ -224,17 +221,13 @@ public class ControladorCursado implements ActionListener {
         String[] parts = str.split(" - ");
         String part1 = parts[0];
 
-        return Integer.valueOf(part1);
+        return Integer.parseInt(part1);
     }
 
     public boolean revisarCampos() {
-        if (agregarCursado.getCbxAlumnos().getSelectedItem().equals("Seleccionar Alumno")
-                || agregarCursado.getCbxMaterias().getSelectedItem().equals("Seleccionar Materia")
-                || agregarCursado.getTxtNota().getText().isEmpty()) {
-            return false;
-        } else {
-            return true;
-        }
+       return !(agregarCursado.getCbxAlumnos().getSelectedItem().equals("Seleccionar Alumno")
+               || agregarCursado.getCbxMaterias().getSelectedItem().equals("Seleccionar Materia")
+               || agregarCursado.getTxtNota().getText().isEmpty());
     }
     
 }

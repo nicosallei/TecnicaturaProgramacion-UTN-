@@ -9,11 +9,11 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import modelos.Materia;
-
 import vistas.AgregarMateria;
 import vistas.EditarMateria;
 import vistas.Menu;
 import vistas.PanelMaterias;
+
 
 /**
  * Nicolas sallei 
@@ -38,10 +38,8 @@ public class ControladorMaterias implements ActionListener {
         this.panelMaterias.getBtnNuevo().addActionListener(this);
         this.panelMaterias.getBtnEliminar().addActionListener(this);
         this.panelMaterias.getBtnEditar().addActionListener(this);
-
         this.agregarMateria.getBtnAgregar().addActionListener(this);
         this.agregarMateria.getBtnCancelar().addActionListener(this);
-
         this.editarMateria.getBtnAgregar().addActionListener(this);
         this.editarMateria.getBtnCancelar().addActionListener(this);
 
@@ -78,7 +76,6 @@ public class ControladorMaterias implements ActionListener {
             materia.setCodMateria(Integer.parseInt(agregarMateria.getTxtCodMateria().getText()));
             materia.setNombreMateria(agregarMateria.getTxtNombre().getText());
             
-
             if (materia.createMateria(materia) == true) {
 
                 clearTable();
@@ -102,7 +99,6 @@ public class ControladorMaterias implements ActionListener {
             materia.setCodMateria(Integer.parseInt(editarMateria.getTxtMatCode().getText()));
             materia.setNombreMateria(editarMateria.getTxtNombre().getText());
             
-
             if (materia.updateMateria(materia) == true) {
 
                 clearTable();
@@ -144,8 +140,6 @@ public class ControladorMaterias implements ActionListener {
         }
     }
 
-    
-
     public void listarMaterias(JTable table) {
         modelo = (DefaultTableModel) panelMaterias.getTblMaterias().getModel();
         panelMaterias.getTblMaterias().setRowHeight(30);
@@ -168,7 +162,6 @@ public class ControladorMaterias implements ActionListener {
         }
     }
 
-    
 
     public boolean camposVacios() {
         return !(agregarMateria.getTxtCodMateria().getText().isEmpty()

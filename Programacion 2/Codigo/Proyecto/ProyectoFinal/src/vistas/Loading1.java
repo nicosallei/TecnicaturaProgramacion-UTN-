@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package vistas;
 
 /**
  *
- * @author SkylakeFrost
+ * @author Nicolas sallei
  */
 public class Loading1 extends javax.swing.JFrame {
 

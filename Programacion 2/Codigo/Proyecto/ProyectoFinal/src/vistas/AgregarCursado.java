@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package vistas;
 
 import javax.swing.JButton;
@@ -10,7 +7,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author emili
+ * @author Nicolas sallei
  */
 public class AgregarCursado extends javax.swing.JFrame {
 public JButton getBtnAgregar() {
@@ -90,7 +87,7 @@ public JButton getBtnAgregar() {
         cbxAlumnos = new javax.swing.JComboBox<>();
         cbxMaterias = new javax.swing.JComboBox<>();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 51, 51));
 
@@ -117,7 +114,7 @@ public JButton getBtnAgregar() {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));

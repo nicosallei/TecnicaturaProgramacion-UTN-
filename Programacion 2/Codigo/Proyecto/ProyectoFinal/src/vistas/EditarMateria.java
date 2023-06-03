@@ -5,7 +5,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author SkylakeFrost
+ * @author Nicolas sallei
  */
 public class EditarMateria extends javax.swing.JFrame {
 
@@ -84,7 +84,7 @@ public class EditarMateria extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 
         jPanel2.setBackground(new java.awt.Color(255, 51, 51));
 

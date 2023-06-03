@@ -119,7 +119,6 @@ public class AlumnoDAO extends Conexion {
             ps.setDate(3, alumno.getFechaNacimiento());
             ps.setString(4, alumno.getDomicilio());
             ps.setString(5, alumno.getTelefono());
-
             ps.setInt(6, alumno.getDni());
             ps.executeUpdate();
             System.out.println("Actualizado Con Exito");
