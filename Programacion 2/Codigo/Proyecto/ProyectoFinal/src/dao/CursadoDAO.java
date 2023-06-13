@@ -17,8 +17,13 @@ public class CursadoDAO extends Conexion {
 
     private final String SQL_INSERT = "INSERT INTO cursado (cur_alu_dni, cur_mat_cod,cur_nota) VALUES (?,?,?)";
     private final String SQL_SELECT = "SELECT * FROM cursado";
-    private final String SQL_DELETE = "DELETE FROM cursado WHERE cur_alu_dni=?";
-    private final String SQL_UPDATE = "UPDATE cursado SET cur_mat_cod=?, cur_nota=? WHERE cur_alu_dni=?";
+    private final String SQL_DELETE = "DELETE FROM cursado WHERE cur_alu_dni=? AND cur_mat_cod=?";
+    
+// este delete es para borrar las notas desde la tabla alumno
+    private final String SQL_DELETE2 = "DELETE FROM cursado WHERE cur_alu_dni=?";
+
+    
+    private final String SQL_UPDATE = "UPDATE cursado SET  cur_nota=? WHERE cur_alu_dni=? AND cur_mat_cod=?";
     private final String SQL_FIND = "SELECT * FROM cursado WHERE cur_alu_dni=?";//Falta Optimizar!
 
     public boolean create(Cursado cursado) {
@@ -58,6 +63,53 @@ public class CursadoDAO extends Conexion {
             Conexion.close(ps);
         }
     }
+    
+    public boolean eliminar_desde_alumno(int idDni) {
+        PreparedStatement ps = null;
+        Connection conn = null;
+
+        try {
+            conn = Conexion.getConnection();
+            ps = conn.prepareStatement(SQL_DELETE2);
+            ps.setInt(1, idDni);
+            ps.executeUpdate();
+            System.out.println("Eliminado con Exito");
+            return true;
+
+        } catch (SQLException e) {
+            System.out.println("Error al Eliminar : " + e);
+            return false;
+
+        } finally {
+            Conexion.close(conn);
+            Conexion.close(ps);
+
+        }
+    }
+    /*
+    public boolean eliminar_idMateria(int idMateria) {
+        PreparedStatement ps = null;
+        Connection conn = null;
+
+        try {
+            conn = Conexion.getConnection();
+            ps = conn.prepareStatement(SQL_DELETE3);
+            ps.setInt(0, idMateria);
+            ps.executeUpdate();
+            System.out.println("Eliminado con Exito");
+            return true;
+
+        } catch (SQLException e) {
+            System.out.println("Error al Eliminar : " + e);
+            return false;
+
+        } finally {
+            Conexion.close(conn);
+            Conexion.close(ps);
+
+        }
+    }
+    */
 
     public List<Cursado> read() {
         Connection conn = null;
@@ -107,10 +159,10 @@ public class CursadoDAO extends Conexion {
             conn = Conexion.getConnection();
             ps = conn.prepareStatement(SQL_UPDATE);
 
-            ps.setInt(1, cursado.getCodigoMateria());
-            ps.setDouble(2, cursado.getNota());
-
-            ps.setInt(3, cursado.getAlumnoDni());
+            ps.setDouble(1, cursado.getNota());
+            ps.setInt(2, cursado.getAlumnoDni());
+            ps.setInt(3, cursado.getCodigoMateria());
+            
             ps.executeUpdate();
             System.out.println("Actualizado Con Exito");
             return true;
@@ -127,14 +179,17 @@ public class CursadoDAO extends Conexion {
         }
     }
 
-    public boolean delete(int codCursado) {
+    public boolean delete(int idDni, int idCursado) {
         PreparedStatement ps = null;
         Connection conn = null;
 
         try {
             conn = Conexion.getConnection();
             ps = conn.prepareStatement(SQL_DELETE);
-            ps.setInt(1, codCursado);
+ 
+            ps.setInt(1, idDni);
+            ps.setInt(2, idCursado);
+             
             ps.executeUpdate();
             System.out.println("Eliminado con Exito");
             return true;

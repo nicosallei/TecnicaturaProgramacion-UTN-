@@ -9,7 +9,8 @@ import java.util.List;
  */
 public class Cursado {
 
-     private int alumnoDni;
+    private int alumnoDni;
+    //private Materia codigoMateria;
     private int codigoMateria;
     private double nota;
     private CursadoDAO cursadoDAO = new CursadoDAO();
@@ -24,6 +25,15 @@ public class Cursado {
     public void setAlumnoDni(int alumnoDni) {
         this.alumnoDni = alumnoDni;
     }
+/*
+    public Materia getCodigoMateria() {
+        return codigoMateria;
+    }
+
+    public void setCodigoMateria(Materia codigoMateria) {
+        this.codigoMateria = codigoMateria;
+    }
+*/
 
     public int getCodigoMateria() {
         return codigoMateria;
@@ -32,6 +42,18 @@ public class Cursado {
     public void setCodigoMateria(int codigoMateria) {
         this.codigoMateria = codigoMateria;
     }
+    
+    
+    
+    public CursadoDAO getCursadoDAO() {
+        return cursadoDAO;
+    }
+
+    public void setCursadoDAO(CursadoDAO cursadoDAO) {
+        this.cursadoDAO = cursadoDAO;
+    }
+
+   
 
     public double getNota() {
         return nota;
@@ -58,9 +80,20 @@ public class Cursado {
     }
 
     //DELETE
-    public boolean deleteCursado(int idCursado) {
-        return cursadoDAO.delete(idCursado);
+    public boolean deleteCursado(int idDni, int idCursado) {
+        return cursadoDAO.delete(idDni,idCursado);
     }
+    // Elimina por dni de Alumno
+     public boolean deleteCursado_de_alumno(int id) {
+        return cursadoDAO.eliminar_desde_alumno(id);
+    }
+     // Elimina por cod de materia
+     
+     /*
+     public boolean deleteCursado_idMateria(int id) {
+        return cursadoDAO.eliminar_idMateria(id);
+    }
+     */
 
     //BUSCAR
     public Cursado findCursado(int idCursado) {

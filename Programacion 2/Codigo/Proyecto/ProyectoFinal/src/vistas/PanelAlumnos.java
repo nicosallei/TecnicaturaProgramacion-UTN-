@@ -104,11 +104,11 @@ public class PanelAlumnos extends javax.swing.JPanel {
 
             },
             new String [] {
-                "DNI", "Nombre", "Apellido", "Fecha Nacimiento", "Domicilio", "Telefono", "Domicilio"
+                "DNI", "Nombre", "Apellido", "Fecha Nacimiento", "Domicilio", "Telefono"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false
+                false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -174,7 +174,7 @@ public class PanelAlumnos extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 801, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

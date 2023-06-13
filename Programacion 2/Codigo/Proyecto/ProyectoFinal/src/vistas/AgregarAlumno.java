@@ -106,11 +106,11 @@ public class AgregarAlumno extends javax.swing.JFrame {
         txtDni = new javax.swing.JTextField();
         txtTelefono = new javax.swing.JTextField();
         txtDomicilio = new javax.swing.JTextField();
-        dateChooser = new datechooser.beans.DateChooserCombo();
         btnAgregar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
+        dateChooser = new datechooser.beans.DateChooserCombo();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -143,44 +143,77 @@ public class AgregarAlumno extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Domicilio");
 
-        dateChooser.setNothingAllowed(false);
-        dateChooser.setFormat(2);
-        dateChooser.setWeekStyle(datechooser.view.WeekDaysStyle.SHORT);
-        try {
-            dateChooser.setDefaultPeriods(new datechooser.model.multiple.PeriodSet(new datechooser.model.multiple.Period(new java.util.GregorianCalendar(2020, 5, 11),
-                new java.util.GregorianCalendar(2020, 5, 11))));
-    } catch (datechooser.model.exeptions.IncompatibleDataExeption e1) {
-        e1.printStackTrace();
-    }
+        btnAgregar.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        btnAgregar.setText("Agregar");
+
+        btnCancelar.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        btnCancelar.setText("Cancelar");
+
+        jPanel2.setBackground(new java.awt.Color(255, 51, 51));
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel8.setText("Agregar Nuevo Alumno");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(207, 207, 207)
+                .addComponent(jLabel8)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel8)
+                .addContainerGap(22, Short.MAX_VALUE))
+        );
+
+        dateChooser.setCurrentView(new datechooser.view.appearance.AppearancesList("custom",
+            new datechooser.view.appearance.ViewAppearance("custom",
+                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 12),
+                    new java.awt.Color(221, 221, 221),
+                    new java.awt.Color(0, 0, 255),
+                    false,
+                    true,
+                    new datechooser.view.appearance.swing.ButtonPainter()),
+                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 12),
+                    new java.awt.Color(221, 221, 221),
+                    new java.awt.Color(0, 0, 255),
+                    true,
+                    true,
+                    new datechooser.view.appearance.swing.ButtonPainter()),
+                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 12),
+                    new java.awt.Color(0, 0, 255),
+                    new java.awt.Color(0, 0, 255),
+                    false,
+                    true,
+                    new datechooser.view.appearance.swing.ButtonPainter()),
+                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 12),
+                    new java.awt.Color(128, 128, 128),
+                    new java.awt.Color(0, 0, 255),
+                    false,
+                    true,
+                    new datechooser.view.appearance.swing.LabelPainter()),
+                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 12),
+                    new java.awt.Color(221, 221, 221),
+                    new java.awt.Color(0, 0, 255),
+                    false,
+                    true,
+                    new datechooser.view.appearance.swing.LabelPainter()),
+                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 12),
+                    new java.awt.Color(221, 221, 221),
+                    new java.awt.Color(255, 0, 0),
+                    false,
+                    false,
+                    new datechooser.view.appearance.swing.ButtonPainter()),
+                (datechooser.view.BackRenderer)null,
+                false,
+                true)));
+    dateChooser.setCalendarBackground(new java.awt.Color(255, 255, 255));
     dateChooser.setLocale(new java.util.Locale("lt", "", ""));
-
-    btnAgregar.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-    btnAgregar.setText("Agregar");
-
-    btnCancelar.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-    btnCancelar.setText("Cancelar");
-
-    jPanel2.setBackground(new java.awt.Color(255, 51, 51));
-
-    jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-    jLabel8.setText("Agregar Nuevo Alumno");
-
-    javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-    jPanel2.setLayout(jPanel2Layout);
-    jPanel2Layout.setHorizontalGroup(
-        jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-        .addGroup(jPanel2Layout.createSequentialGroup()
-            .addGap(207, 207, 207)
-            .addComponent(jLabel8)
-            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-    );
-    jPanel2Layout.setVerticalGroup(
-        jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-        .addGroup(jPanel2Layout.createSequentialGroup()
-            .addContainerGap()
-            .addComponent(jLabel8)
-            .addContainerGap(22, Short.MAX_VALUE))
-    );
 
     javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
     jPanel1.setLayout(jPanel1Layout);
@@ -194,17 +227,13 @@ public class AgregarAlumno extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING)))
+            .addGap(20, 20, 20)
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(20, 20, 20)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(txtApellido)
-                        .addComponent(txtNombre)
-                        .addComponent(txtDni, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)))
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(18, 18, 18)
-                    .addComponent(dateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE)))
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addComponent(txtApellido)
+                .addComponent(txtNombre)
+                .addComponent(txtDni, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE)
+                .addComponent(dateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE))
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                 .addComponent(jLabel6)
                 .addComponent(jLabel5))

@@ -54,6 +54,8 @@ public class ControladorCursado implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == panelCursados.getBtnNuevo()) {
             cargarComboBox();
+            agregarCursado.getTxtNota().setText("");
+            
             agregarCursado.setVisible(true);
         } else if (e.getSource() == panelCursados.getBtnEditar()) {
 
@@ -72,6 +74,7 @@ public class ControladorCursado implements ActionListener {
     }
 
     public void agregar() {
+        
         if (revisarCampos() == false) {
             JOptionPane.showMessageDialog(null, "Campos Vacios, Revise Alumno, Materia o Nota");
         } else if (val.validarNota(Double.parseDouble(agregarCursado.getTxtNota().getText())) == false) {
@@ -104,8 +107,8 @@ public class ControladorCursado implements ActionListener {
             JOptionPane.showMessageDialog(null, "Nota Solo Puede Contener Numeros!");
         } else {
 
-            cursado.setAlumnoDni(splitearString(editarCursado.getCbxAlumnos().getSelectedItem().toString()));
-            cursado.setCodigoMateria(splitearString(editarCursado.getCbxMaterias().getSelectedItem().toString()));
+            cursado.setAlumnoDni(Integer.parseInt(editarCursado.getTxtAlumno().getText()));
+            cursado.setCodigoMateria(Integer.parseInt(editarCursado.getTxtMateria().getText()));
             cursado.setNota(Double.parseDouble(editarCursado.getTxtNota().getText()));
 
             if (cursado.updateCursado(cursado) == true) {
@@ -127,8 +130,9 @@ public class ControladorCursado implements ActionListener {
             JOptionPane.showMessageDialog(null, "Debe Seleccione Una Fila!");
         } else {
             if (JOptionPane.showConfirmDialog(null, "Desea Elimnar?", "Seleccione Una Opc.", JOptionPane.YES_NO_OPTION) == 0) {
-                int id = Integer.parseInt((String) panelCursados.getTblCursados().getValueAt(fila, 0).toString());
-                cursado.deleteCursado(id);
+                int id_dni = Integer.parseInt((String) panelCursados.getTblCursados().getValueAt(fila, 0).toString());
+                int id_cursado = Integer.parseInt((String) panelCursados.getTblCursados().getValueAt(fila, 1).toString());
+                cursado.deleteCursado(id_dni,id_cursado);
                 clearTable();
                 listarCursados(panelCursados.getTblCursados());
                 JOptionPane.showMessageDialog(null, "Eliminado!");
@@ -137,17 +141,43 @@ public class ControladorCursado implements ActionListener {
         }
     }
 
+    
+    
+    
     public void cargarVistaEditar() {
 
         int fila = panelCursados.getTblCursados().getSelectedRow();
         if (fila == -1) {
             JOptionPane.showMessageDialog(null, "Debe Seleccione Una Fila!");
         } else {
-            cargarComboBoxEditar();
+            
+   
+            String nombre="";
+            
+            editarCursado.getTxtAlumno().setText(panelCursados.getTblCursados().getValueAt(fila, 0).toString());
+            
+            
+            String prueba = panelCursados.getTblCursados().getValueAt(fila, 0).toString();
+             List<Alumno> listaAlumnos = alumno.readlumnos();
+            
+            for (int i = 0; i < listaAlumnos.size(); i++) {
+                
+                if(Integer.parseInt(prueba) == listaAlumnos.get(i).getDni() ){
+                    
+                nombre =listaAlumnos.get(i).getNombre()+ " "+ listaAlumnos.get(i).getApellido();
+                break;
+                }        
+        }
+            
+            editarCursado.getTxtNombre().setText(nombre);
+            
+            editarCursado.getTxtMateria().setText(panelCursados.getTblCursados().getValueAt(fila, 1).toString());
             editarCursado.getTxtNota().setText(panelCursados.getTblCursados().getValueAt(fila, 2).toString());
             editarCursado.setVisible(true);
         }
     }
+    
+
 
     //Carga De ComboBoxes
     public void cargarComboBox() {
@@ -167,27 +197,6 @@ public class ControladorCursado implements ActionListener {
 
         for (int i = 0; i < listaMaterias.size(); i++) {
             agregarCursado.getCbxMaterias().addItem(String.valueOf(listaMaterias.get(i).getCodMateria() + " - " + listaMaterias.get(i).getNombreMateria()));
-        }
-
-    }
-
-    public void cargarComboBoxEditar() {
-
-        List<Alumno> listaAlumnos = alumno.readlumnos();
-        List<Materia> listaMaterias = materia.readMaterias();
-
-        editarCursado.getCbxAlumnos().removeAllItems();
-        editarCursado.getCbxAlumnos().addItem("Seleccionar Alumno");
-        for (int i = 0; i < listaAlumnos.size(); i++) {
-            editarCursado.getCbxAlumnos().addItem(String.valueOf(listaAlumnos.get(i).getDni()) + " - " + listaAlumnos.get(i).getNombre()
-                    + " " + listaAlumnos.get(i).getApellido());
-        }
-
-        editarCursado.getCbxMaterias().removeAllItems();
-        editarCursado.getCbxMaterias().addItem("Seleccionar Materia");
-
-        for (int i = 0; i < listaMaterias.size(); i++) {
-            editarCursado.getCbxMaterias().addItem(String.valueOf(listaMaterias.get(i).getCodMateria() + " - " + listaMaterias.get(i).getNombreMateria()));
         }
 
     }

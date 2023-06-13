@@ -9,16 +9,20 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import modelos.Alumno;
+import modelos.Cursado;
 import vistas.AgregarAlumno;
 import vistas.EditarAlumno;
 import vistas.Menu;
 import vistas.PanelAlumnos;
+
+
 
 /**
  * Nicolas sallei 
  */
 public class ControladorAlumnos implements ActionListener {
 
+    private Cursado cursado = new Cursado();
     private Alumno alumno = new Alumno();
     private Validador val = new Validador();
     private AgregarAlumno agregarAlumno = new AgregarAlumno();
@@ -47,6 +51,13 @@ public class ControladorAlumnos implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == panelAlumnos.getBtnNuevoAlumno()) {
+            
+            agregarAlumno.getTxtApellido().setText("");
+            agregarAlumno.getTxtNombre().setText("");
+            agregarAlumno.getTxtDni().setText("");
+            agregarAlumno.getTxtDomicilio().setText("");
+            agregarAlumno.getTxtTelefono().setText("");
+            
             agregarAlumno.setVisible(true);
         } else if (e.getSource() == panelAlumnos.getBtnEliminar()) {
             eliminar();
@@ -77,7 +88,6 @@ public class ControladorAlumnos implements ActionListener {
             fila[3] = lista.get(i).getFechaNacimiento();
             fila[4] = lista.get(i).getDomicilio();
             fila[5] = lista.get(i).getTelefono();
-            fila[6] = lista.get(i).getCodigoInscripcion();
             modelo.addRow(fila);
         }
         panelAlumnos.getTblAlumnos().setModel(modelo);
@@ -93,6 +103,7 @@ public class ControladorAlumnos implements ActionListener {
 
     public void agregar() {
 
+        
         if (validarCampos() == false) {
             JOptionPane.showMessageDialog(null, "Todos Los Campos Deben Estar Completos!");
         } else if (validarTextoCampos() == false) {
@@ -166,8 +177,9 @@ public class ControladorAlumnos implements ActionListener {
         if (fila == -1) {
             JOptionPane.showMessageDialog(null, "Debe Seleccione Una Fila!");
         } else {
-            if (JOptionPane.showConfirmDialog(null, "Esto Tambien Eliminará La Inscripcion Del Alumno!", "Desea Eliminar?", JOptionPane.YES_NO_OPTION) == 0) {
+            if (JOptionPane.showConfirmDialog(null, "Esto Tambien Eliminará Las Notas Del Alumno!", "Desea Eliminar?", JOptionPane.YES_NO_OPTION) == 0) {
                 int id = Integer.parseInt((String) panelAlumnos.getTblAlumnos().getValueAt(fila, 0).toString());
+                cursado.deleteCursado_de_alumno(id);
                 
                 alumno.deleteAlumno(id);
                 clearTable();
