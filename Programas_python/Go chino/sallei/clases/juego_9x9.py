@@ -246,7 +246,7 @@ class Principal():
               
 
     
-"""     
+    
     def FinPartida(self):
         persona_gano = self.calcularQuienGano()
         mensaje_ganador = f'Go Chess | ¡{persona_gano} ha ganado!'
@@ -512,7 +512,7 @@ class Principal():
 
 
     
-""" 
+ 
         
         
     

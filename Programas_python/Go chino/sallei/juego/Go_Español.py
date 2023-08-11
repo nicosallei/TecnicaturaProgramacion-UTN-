@@ -25,11 +25,11 @@ class Principal:
     def __init__(self, komi=2.5):
         pygame.init()
 
-        ANCHO_PANTALLA = 563
-        ALTO_PANTALLA = 563
+        ANCHO_PANTALLA = 600
+        ALTO_PANTALLA = 600
 
         self.sprites = pygame.sprite.Group()
-        self.arreglo_sprites = [[0 for _ in range(19)] for _ in range(19)]
+        self.arreglo_sprites = [[0 for _ in range(9)] for _ in range(9)]
 
         self.pantalla = pygame.display.set_mode((ANCHO_PANTALLA, ALTO_PANTALLA))
 
@@ -132,32 +132,13 @@ class Principal:
         pygame.quit()
 
     def dibujarTablero(self):
-        for y_pos in range(10, 551, 30):
-            pygame.draw.line(self.pantalla, NEGRO, (10, y_pos), (551, y_pos), width=2)
+        for y_pos in range(55, 550, 55):
+            pygame.draw.line(self.pantalla, NEGRO, (55, y_pos), (550, y_pos), width=2)
         
-        for x_pos in range(10, 551, 30):
-            pygame.draw.line(self.pantalla, NEGRO, (x_pos, 10), (x_pos, 551), width=2)
+        for x_pos in range(55, 500, 55):
+            pygame.draw.line(self.pantalla, NEGRO, (x_pos, 55), (x_pos, 500), width=2)
 
-        posiciones_estrella = \
-            [
-                (100, 100),
-                (100, 280),
-                (100, 460),        
-
-                (280, 100),
-                (280, 280),
-                (280, 460),
-
-                (460, 100),
-                (460, 280),
-                (460, 460)
-            ]
         
-        for ubicacion in posiciones_estrella:
-            x, y = ubicacion
-            loc = (x + 1, y)
-
-            pygame.draw.circle(self.pantalla, NEGRO, loc, 5, width=0)
 
     def dibujarSprites(self):
         for entidad in self.sprites:
@@ -166,13 +147,13 @@ class Principal:
             if entidad.ocupado:
                 x, y = entidad.ubicacion
                 ubicacion = (x+1, y)
-                pygame.draw.circle(self.pantalla, entidad.color, ubicacion, 10, 0)
+                pygame.draw.circle(self.pantalla, entidad.color, ubicacion, 15, 0)
 
     def generarUbicacionesSprites(self):
         ubicaciones = []
 
-        for indice_y, y_pos in enumerate(range(10, 551, 30)):
-            for indice_x, x_pos in enumerate(range(10, 551, 30)):
+        for indice_y, y_pos in enumerate(range(55, 500, 55)):
+            for indice_x, x_pos in enumerate(range(55, 500, 55)):
                 ubicaciones.append([[indice_y, indice_x], [y_pos, x_pos]])
         
         self.ubicaciones = ubicaciones
@@ -182,10 +163,10 @@ class Principal:
         elemento = 0
 
         for ubicacion in self.ubicaciones:
-            if elemento >= 19:
+            if elemento >= 9:
                 fila += 1
                 elemento = 0
-            if fila > 18:
+            if fila > 8:
                 break
             
             sprite = Punto(*ubicacion,(10,10),(255, 32, 1))
@@ -419,7 +400,7 @@ class Principal:
 
         # Probar suicidios
 
-        grupo_actual = np.zeros((19, 19), dtype=bool)
+        grupo_actual = np.zeros((9, 9), dtype=bool)
         pos_original_tiene_libertades = self.probarGrupo(tablero_oponente, tablero, *pos_original, grupo_actual)
 
         # Solo probar piedras adyacentes en el color del oponente
@@ -429,7 +410,7 @@ class Principal:
             if not tablero_oponente[pos]:
                 continue
 
-            grupo_actual = np.zeros((19, 19), dtype=bool)
+            grupo_actual = np.zeros((9, 9), dtype=bool)
             tiene_libertades = self.probarGrupo(tablero, tablero_oponente, *pos, grupo_actual)
 
             if not tiene_libertades:
@@ -447,9 +428,9 @@ class Principal:
             if break_out:
                 break
 
-        tablero_salida = [[i for i in range(19)] for v in range(19)]
-        for i in range(19):
-            for v in range(19):
+        tablero_salida = [[i for i in range(9)] for v in range(9)]
+        for i in range(9):
+            for v in range(9):
                 if tablero_blanco[i][v]:
                     tablero_salida[i][v] = 1
                 elif tablero_negro[i][v]:

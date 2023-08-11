@@ -51,7 +51,7 @@ public class ControladorAlumnos implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == panelAlumnos.getBtnNuevoAlumno()) {
-            agregarAlumno.getDateChooser().setText("");
+            //agregarAlumno.getDateChooser().setText("");
             agregarAlumno.getTxtApellido().setText("");
             agregarAlumno.getTxtNombre().setText("");
             agregarAlumno.getTxtDni().setText("");
