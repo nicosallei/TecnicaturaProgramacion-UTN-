@@ -17,15 +17,37 @@ public class Tardanza {
     private String tipo;
     private Date fecha;
     private int minuto;
+    private int hora;
     
-    private ArrayList<Empleado> empleado = new ArrayList(); 
+    private Empleado empleado;
 
-    public Tardanza() {
+    public Tardanza(long id, String tipo, Date fecha, int minuto,int hora) {
+        this.id = id;
+        this.tipo = tipo;
+        this.fecha = fecha;
+        this.minuto = minuto;
+        this.hora=hora;
     }
 
-    public void addEmpleado(Empleado empleado){
-    this.empleado.add(empleado);
+    public int getHora() {
+        return hora;
     }
+
+    public void setHora(int hora) {
+        this.hora = hora;
+    }
+
+   
+
+    public Empleado getEmpleado() {
+        return empleado;
+    }
+
+    public void setEmpleado(Empleado empleado) {
+        this.empleado = empleado;
+    }
+
+   
     
     public long getId() {
         return id;
@@ -62,13 +84,7 @@ public class Tardanza {
         this.minuto = minuto;
     }
 
-    public ArrayList<Empleado> getEmpleado() {
-        return empleado;
-    }
-
-    public void setEmpleado(ArrayList<Empleado> empleado) {
-        this.empleado = empleado;
-    }
+    
     
     
 }

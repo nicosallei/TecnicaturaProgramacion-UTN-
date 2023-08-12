@@ -5,6 +5,8 @@
 package parte_B;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  *
@@ -24,8 +26,41 @@ public class Empleado {
     public Empleado() {
     }
 
-    public void addTardanza(Tardanza tardanza){
-    this.tardanza.add(tardanza);
+    
+    // Metodo B.2
+    public List<Asistencia> getAsistenciaXMesXAnio(int mes,int anio){
+    List<Asistencia> lista = new ArrayList();
+    
+    for(Asistencia asis: asistencia){
+    if(asis.getFecha().getMonth()==mes && asis.getFecha().getYear()==anio){
+    lista.add(asis);
+    }
+    }
+    return lista;
+    }
+    
+    // Metodo B.3
+    public List<Tardanza> getDiasConTardanza(int mes, int anio){
+    List<Tardanza> lista = new ArrayList();
+        for(Asistencia asis: asistencia){
+        
+        if(asis.getHora()!=this.regimenHorario.getHoraIngreso() || this.regimenHorario.getMinutoIngreso()-asis.getMinuto()>15){
+        
+            addTardanza(asis.getId(),asis.getTipo(),asis.getFecha(),asis.getMinuto(),asis.getHora()); 
+        }
+        }
+    for(Tardanza tard: tardanza){
+    if(tard.getFecha().getMonth()==mes && tard.getFecha().getYear()==anio){
+    lista.add(tard);
+    }
+    }
+    return lista;
+    }
+    
+//-------------------------------------------------------------------------------------------------------
+    
+    public void addTardanza(long id, String tipo, Date fecha, int minuto,int hora){
+    this.tardanza.add(new Tardanza(id,tipo,fecha,minuto,hora));
     }
     public void addAsistencia(Asistencia asistencia){
     this.asistencia.add(asistencia);

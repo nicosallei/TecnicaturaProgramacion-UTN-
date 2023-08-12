@@ -26,6 +26,10 @@ public class Asistencia {
         return empleado;
     }
 
+    public void setEmpleado(Empleado empleado) {
+        this.empleado = empleado;
+    }
+
     public long getId() {
         return id;
     }
