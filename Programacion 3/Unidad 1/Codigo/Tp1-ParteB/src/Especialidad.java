@@ -20,6 +20,12 @@ public class Especialidad {
     public Especialidad() {
     }
 
+    public Especialidad(int idEspecialidad, String denominacion) {
+        this.idEspecialidad = idEspecialidad;
+        this.denominacion = denominacion;
+    }
+    
+    
     public void addMedico(Medico medic){
     this.medico.add(medic);
     }

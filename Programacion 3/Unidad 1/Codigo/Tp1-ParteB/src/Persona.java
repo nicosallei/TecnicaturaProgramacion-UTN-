@@ -19,6 +19,15 @@ public class Persona {
     public Persona() {
     }
 
+    public Persona(int idPersona, String nombre, String apellido, long dni) {
+        this.idPersona = idPersona;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+    }
+    
+    
+
     public int getIdPersona() {
         return idPersona;
     }

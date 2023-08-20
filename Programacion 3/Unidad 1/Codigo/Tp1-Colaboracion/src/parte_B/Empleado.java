@@ -34,18 +34,26 @@ public class Empleado {
     }
     
     public void mostrar(){
-    
+        System.out.println("------Empleado-----");
         System.out.println("Nombre: "+this.nombre);
         System.out.println("Cuit: "+this.cuit);
         System.out.println("Domicilio: "+this.domicilio);
         System.out.println("Email: "+this.email);
         
-        for(Tardanza tar:tardanza){
-        tar.mostrar();
-        }
-        for(Asistencia asi:asistencia){
+         for(Asistencia asi:asistencia){
+            System.out.println(" ");
+            System.out.println("--> Asistencia");
+            System.out.println(" ");
         asi.mostrar();
         }
+        
+        for(Tardanza tar:tardanza){
+            System.out.println(" ");
+            System.out.println("--> Tardanza -->");
+            System.out.println(" ");
+        tar.mostrar();
+        }
+       
     
     }
 
@@ -63,11 +71,12 @@ public class Empleado {
     }
     
     // Metodo B.3
-    public List<Tardanza> getDiasConTardanza(int mes, int anio){
+    //List<Tardanza>
+    public  void  getDiasConTardanza(int mes, int anio){
     List<Tardanza> lista = new ArrayList();
         for(Asistencia asis: asistencia){
         
-        if(asis.getHora()!=this.regimenHorario.getHoraIngreso() || this.regimenHorario.getMinutoIngreso()-asis.getMinuto()>15){
+        if(asis.getHora()!=this.regimenHorario.getHoraIngreso() || this.regimenHorario.getMinutoIngreso()-asis.getMinuto() < -16){
         
             addTardanza(asis.getId(),asis.getTipo(),asis.getFecha(),asis.getMinuto(),asis.getHora()); 
         }
@@ -77,7 +86,7 @@ public class Empleado {
     lista.add(tard);
     }
     }
-    return lista;
+    //return lista;
     }
     
 //-------------------------------------------------------------------------------------------------------

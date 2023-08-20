@@ -19,6 +19,15 @@ public class Domicilio {
     public Domicilio() {
     }
 
+    public Domicilio(int idDomicilio, String localidad, String calle, int numero) {
+        this.idDomicilio = idDomicilio;
+        this.localidad = localidad;
+        this.calle = calle;
+        this.numero = numero;
+    }
+    
+    
+
     public int getIdDomicilio() {
         return idDomicilio;
     }

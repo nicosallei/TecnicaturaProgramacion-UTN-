@@ -83,7 +83,7 @@ public class Expediente {
     
     public void listaExpedienteRecursivo(Expediente expediente, List<Expediente> lista){
     lista.add(expediente);
-    if(expediente.getExpediente()!=null){
+    if(expediente.getExpediente()!=null && !expediente.getExpediente().isEmpty()){
     for(Expediente exp: expediente.expediente){
     listaExpedienteRecursivo(exp, lista);
     }

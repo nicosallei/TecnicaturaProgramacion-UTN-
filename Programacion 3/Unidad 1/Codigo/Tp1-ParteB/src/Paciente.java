@@ -1,4 +1,5 @@
 
+import Util.FuncionApp;
 import java.util.ArrayList;
 
 /*
@@ -20,6 +21,57 @@ public class Paciente extends Persona {
 
     public Paciente() {
     }
+
+    public Paciente(int idPaciente, int nroSocio) {
+        this.idPaciente = idPaciente;
+        this.nroSocio = nroSocio;
+    }
+
+    public Paciente(int idPaciente, int nroSocio, int idPersona, String nombre, String apellido, long dni) {
+        super(idPersona, nombre, apellido, dni);
+        this.idPaciente = idPaciente;
+        this.nroSocio = nroSocio;
+    }
+    
+    
+    
+    public void mostrarPaciente(){
+    
+        System.out.println("---- Paciente ----\n");
+        System.out.println("Paciente ID: "+this.getIdPaciente());
+        System.out.println("Numero Socio: "+this.getNroSocio()+"\n");
+        
+        System.out.println("Apellido y Nombre: "+this.getApellido()+" "+this.getNombre());
+        System.out.println("DNI: "+this.getDni());
+        System.out.println("Localidad: "+this.getDomicilio().getLocalidad()+" Calle: "+this.getDomicilio().getCalle()+" Numero: "+this.getDomicilio().getNumero()+"\n");
+        
+    }
+    public void mostrarHistorialClinico(){
+    
+        System.out.println("Hitoria Clinica ID: "+this.getHistoriaClinica().getIdHistoriaClinica());
+        System.out.println("Fecha Alta: "+FuncionApp.convertirDateToString(this.getHistoriaClinica().getFechaAlta())+"\n");
+        
+        System.out.println("-----  Detalle Hitoria Clinica  -----\n");
+        
+        for(DetalleHistoriaClinica detalle: this.historiaClinica.getDetalleHistoriaClinica()){
+        
+        detalle.mostrarDetalle();
+        }
+    }
+    
+    public void mostrarTurnos(){
+    
+    for(Turno tur: turno){
+    
+    tur.mostrar();
+    tur.getMedico().mostrarMedico();
+    
+    }
+    
+    }
+    
+    
+    
     
     public void addTurno(Turno turn){
     this.turno.add(turn);

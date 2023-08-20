@@ -1,4 +1,5 @@
 
+import Util.FuncionApp;
 import java.util.Date;
 
 /*
@@ -22,6 +23,33 @@ public class Turno {
     private Medico medico;
 
     public Turno() {
+    }
+
+    public Turno(int idTurno, Date fecha, int hora, int minutos) {
+        this.idTurno = idTurno;
+        this.fecha = fecha;
+        this.hora = hora;
+        this.minutos = minutos;
+    }
+
+    public Turno(int idTurno, Date fecha, int hora, int minutos, Paciente paciente, Medico medico) {
+        this.idTurno = idTurno;
+        this.fecha = fecha;
+        this.hora = hora;
+        this.minutos = minutos;
+        this.paciente = paciente;
+        this.medico = medico;
+    }
+    
+    
+    
+    
+    public void mostrar(){
+    
+        System.out.println("----   Turno   ----\n");
+        System.out.println("Turno ID: "+this.getIdTurno());
+        System.out.println("Fecha: "+FuncionApp.convertirDateToString(this.fecha));
+        System.out.println("Hora: "+this.hora+":"+this.getMinutos()+"\n");
     }
 
     public Medico getMedico() {

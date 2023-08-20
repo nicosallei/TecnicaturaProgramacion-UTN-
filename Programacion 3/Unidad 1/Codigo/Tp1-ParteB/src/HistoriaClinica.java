@@ -22,6 +22,15 @@ public class HistoriaClinica {
 
     public HistoriaClinica() {
     }
+
+    public HistoriaClinica(int idHistoriaClinica, int numero, Date fechaAlta) {
+        this.idHistoriaClinica = idHistoriaClinica;
+        this.numero = numero;
+        this.fechaAlta = fechaAlta;
+        
+    }
+    
+    
     
     public void addDetalleHistoriaClinica(DetalleHistoriaClinica detalle){
     this.detalleHistoriaClinica.add(detalle);

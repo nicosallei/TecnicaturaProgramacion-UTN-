@@ -1,4 +1,5 @@
 
+import Util.FuncionApp;
 import java.util.Date;
 
 /*
@@ -21,6 +22,27 @@ public class DetalleHistoriaClinica {
     private HistoriaClinica historiaClinica;
 
     public DetalleHistoriaClinica() {
+    }
+
+    public DetalleHistoriaClinica(int idDetalleHC, Date fechaAtencion, String sintomas, String diagnostico, String observaciones) {
+        this.idDetalleHC = idDetalleHC;
+        this.fechaAtencion = fechaAtencion;
+        this.sintomas = sintomas;
+        this.diagnostico = diagnostico;
+        this.observaciones = observaciones;
+    }
+    
+    
+    
+    public void mostrarDetalle(){
+    
+        System.out.println("--- Detalle Clinico ---\n");
+        System.out.println("Detalle ID: "+this.getIdDetalleHC());
+        System.out.println("Fecha Atencion: "+FuncionApp.convertirDateToString(this.fechaAtencion));
+        System.out.println("Sintomas: "+this.getSintomas());
+        System.out.println("Diagnostico: "+this.getDiagnostico());
+        System.out.println("Observaciones: "+this.getObservaciones());
+    
     }
 
     public int getIdDetalleHC() {
