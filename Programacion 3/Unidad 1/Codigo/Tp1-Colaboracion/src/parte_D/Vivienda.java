@@ -23,6 +23,35 @@ public class Vivienda {
     public Vivienda() {
     }
 
+    public void addHabitacion(Habitacion habitacion){
+    this.habitacion.add(habitacion);
+    }    
+    
+    public Vivienda(long id, String calle, int numeroCalle, double superficieTerreno) {
+        this.id = id;
+        this.calle = calle;
+        this.numeroCalle = numeroCalle;
+        this.superficieTerreno = superficieTerreno;
+    }
+
+    public void mostrar() throws Exception{
+    
+        System.out.println("Vivienda ID: "+this.id);
+        System.out.println("Calle: "+this.calle);
+        System.out.println("Numero de calle: "+this.numeroCalle);
+        System.out.println("Superficie Terreno: "+this.superficieTerreno);
+        
+        
+        for(Habitacion hab: habitacion){
+            System.out.println(" ");
+            System.out.println("--Habitacion--");
+        hab.mostrar();
+        }
+        
+        System.out.println("Metros cuadrados cubiertos de la vivienda: "+getMetrosCuadradosCubiertos());
+        
+    }
+    
     // Metodo D.2
     public double getMetrosCuadradosCubiertos() throws Exception{
     double totalMetros=0;

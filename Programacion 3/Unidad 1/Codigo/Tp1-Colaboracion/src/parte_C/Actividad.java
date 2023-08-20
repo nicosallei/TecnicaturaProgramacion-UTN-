@@ -5,6 +5,7 @@
 package parte_C;
 
 import java.util.Date;
+import util.FuncionApp;
 
 /**
  *
@@ -21,6 +22,29 @@ public class Actividad {
 
     public Actividad() {
     }
+
+    public Actividad(Date fechaInicio, Date fechaFin, String nombre, String descripcion) {
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+       
+    }
+    
+    public void mostrar(){
+    
+        System.out.println("Fecha Inicio: "+FuncionApp.convertirDateToString(this.fechaInicio));
+        System.out.println("Fecha Fin: "+FuncionApp.convertirDateToString(this.fechaFin));
+        System.out.println("Nombre: "+this.nombre);
+        System.out.println("Descripcion: "+this.descripcion);
+        System.out.println(" ");
+        System.out.println("-->Tipo actividad");
+        System.out.println(" ");
+        this.tipoActividad.mostrar();
+    
+    
+    }
+    
 
     public Persona getPersona() {
         return persona;

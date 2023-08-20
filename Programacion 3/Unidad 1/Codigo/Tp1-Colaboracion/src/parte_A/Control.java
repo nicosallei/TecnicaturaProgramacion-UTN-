@@ -17,8 +17,24 @@ public class Control {
     private boolean esObligatorio;
     
     private ArrayList <Expediente> expediente = new ArrayList();
+    private EstadoControl estadoControl;
 
+    public EstadoControl getEstadoControl() {
+        return estadoControl;
+    }
+
+    public void setEstadoControl(EstadoControl estadoControl) {
+        this.estadoControl = estadoControl;
+    }
+    
+    
     public Control() {
+    }
+
+    public Control(int id, String denominacion, boolean esObligatorio) {
+        this.id = id;
+        this.denominacion = denominacion;
+        this.esObligatorio = esObligatorio;
     }
     
     
@@ -60,6 +76,13 @@ public class Control {
     }
     
     
-    
+    private String rellenarCadena(String cadena){
+        if(cadena.length() > 15){
+            return cadena.substring(0, 15);
+        }else{
+            cadena = cadena + " ";
+            return rellenarCadena(cadena);
+        }
+    }
     
 }

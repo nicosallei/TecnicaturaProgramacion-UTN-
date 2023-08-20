@@ -5,6 +5,7 @@
 package parte_B;
 
 import java.util.Date;
+import util.FuncionApp;
 
 /**
  *
@@ -20,6 +21,22 @@ public class Asistencia {
     private Empleado empleado;
     
     public Asistencia() {
+    }
+
+    public Asistencia(long id, String tipo, Date fecha, int hora, int minuto) {
+        this.id = id;
+        this.tipo = tipo;
+        this.fecha = fecha;
+        this.hora = hora;
+        this.minuto = minuto;
+    }
+    
+    public void mostrar(){
+        System.out.println("Asistencia ID: "+this.id);
+        System.out.println("Tipo: "+this.tipo);
+        System.out.println("Fecha "+FuncionApp.convertirDateToString(fecha));
+        System.out.println("Minuto: "+this.minuto);
+        System.out.println("Hora: "+this.hora);
     }
 
     public Empleado getEmpleado() {

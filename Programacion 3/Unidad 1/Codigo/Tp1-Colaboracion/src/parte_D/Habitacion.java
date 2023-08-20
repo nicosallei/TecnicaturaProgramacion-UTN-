@@ -18,6 +18,18 @@ public class Habitacion {
     public Habitacion() {
     }
 
+    public Habitacion(long id, String nombre, long metrosCuadrados) {
+        this.id = id;
+        this.nombre = nombre;
+        this.metrosCuadrados = metrosCuadrados;
+    }
+
+    public void mostrar(){
+        
+        System.out.println("Habitacion ID: "+this.id);
+        System.out.println("Nombre: "+this.nombre);
+        System.out.println("Metros Cuadrados: "+this.metrosCuadrados);
+    }
     public long getId() {
         return id;
     }

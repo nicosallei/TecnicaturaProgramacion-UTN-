@@ -17,16 +17,35 @@ public class RegimenHorario {
 
     private Empleado empleado;
 
+    
+    
+    
+    public RegimenHorario() {
+    }
+
+    public RegimenHorario(long id, int horaIngreso, int minutoIngreso, int horaEgreso, int minutoEgreso) {
+        this.id = id;
+        this.horaIngreso = horaIngreso;
+        this.minutoIngreso = minutoIngreso;
+        this.horaEgreso = horaEgreso;
+        this.minutoEgreso = minutoEgreso;
+    }
+    
+    public void mostrar(){
+        System.out.println("Regimen Horario ID: "+this.id);
+        System.out.println("Hora Ingreso: "+this.getHoraIngreso());
+        System.out.println("Minuto Ingreso: "+this.getMinutoIngreso());
+        System.out.println("Hora Egreso: "+this.getHoraEgreso());
+        System.out.println("Minuto Egreso: "+this.getMinutoEgreso());
+    }
+    
+    
     public Empleado getEmpleado() {
         return empleado;
     }
 
     public void setEmpleado(Empleado empleado) {
         this.empleado = empleado;
-    }
-    
-    
-    public RegimenHorario() {
     }
 
     public long getId() {

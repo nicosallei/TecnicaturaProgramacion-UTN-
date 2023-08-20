@@ -24,9 +24,42 @@ public class Persona {
 
     public Persona() {
     }
+
+    public Persona(String nombre, String tipoDocumento, long nroDocumento, int telefono, String email, String celular) {
+        this.nombre = nombre;
+        this.tipoDocumento = tipoDocumento;
+        this.nroDocumento = nroDocumento;
+        this.telefono = telefono;
+        this.email = email;
+        this.celular = celular;
+     
+    }
+    
     
     public void addActividad(Actividad actividad){
     this.actividad.add(actividad);
+    }
+    
+    public void mostrar(){
+    
+        System.out.println("Nombre: "+this.nombre);
+        System.out.println("Tipo Documento: "+ this.tipoDocumento);
+        System.out.println("Nro Documento: "+this.nroDocumento);
+        System.out.println("Telefono: "+this.telefono);
+        System.out.println("Email: "+this.email);
+        System.out.println("Celular: "+this.celular);
+
+            
+        System.out.println(" ");
+        for(Actividad act: actividad){
+            System.out.println("--Actividad");
+            System.out.println(" ");
+            act.mostrar();
+            
+        }
+        
+    
+    
     }
 
     // Metodo C.1
@@ -57,9 +90,11 @@ public class Persona {
     double puntos=0;
         for(Actividad act:actividad){
         
-        if(codigo == act.getTipoActividad().getCodigo() && anio==act.getFechaFin().getYear()){
+        //if(codigo == act.getTipoActividad().getCodigo() && anio==act.getFechaFin().getYear()){
+            if(codigo == act.getTipoActividad().getCodigo()){
+                if(anio==act.getFechaFin().getYear()+1900){
         puntos +=act.getTipoActividad().getPuntosAsignados();
-        
+                }
         }
         }
     

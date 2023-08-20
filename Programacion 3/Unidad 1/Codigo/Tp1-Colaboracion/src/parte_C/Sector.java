@@ -24,6 +24,28 @@ public class Sector {
     public Sector() {
     }
 
+    public Sector(int numero, String denominacion, String tipo) {
+        this.numero = numero;
+        this.denominacion = denominacion;
+        this.tipo = tipo;
+    }
+
+        public void mostrar(){
+        
+            System.out.println("Numero: "+this.numero);
+            System.out.println("Denominacion: "+this.denominacion);
+            System.out.println("Tipo: "+this.tipo);
+            System.out.println(" ");
+            for(Persona pers:persona){
+                System.out.println("--Persona");
+                System.out.println(" ");
+            pers.mostrar();
+            }
+            
+        }
+    
+    
+    
     // Metodo C.4
     public List<Sector> obtenerTotalSubsectores(){
     List<Sector> totalSubsectores = new ArrayList();
@@ -31,7 +53,7 @@ public class Sector {
     return totalSubsectores;
     
     }
-    public void obtenerSubsectoresRecursivos(Sector sector, List<Sector> totalSubsectores){
+    private void obtenerSubsectoresRecursivos(Sector sector, List<Sector> totalSubsectores){
     totalSubsectores.add(sector);
     for(Sector subsector: sector.sector)
         obtenerSubsectoresRecursivos(subsector,totalSubsectores);

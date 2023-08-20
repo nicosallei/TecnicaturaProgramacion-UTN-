@@ -20,7 +20,30 @@ public class Barrio {
 
     public Barrio() {
     }
+
+    public Barrio(long id, String nombre, String empresaConstructora) {
+        this.id = id;
+        this.nombre = nombre;
+        this.empresaConstructora = empresaConstructora;
+    }
     
+    public void addVivienda(Vivienda vivienda){
+    this.vivienda.add(vivienda);
+    }
+    public void mostrar() throws Exception{
+        System.out.println("-----------BARRIO----------");
+        System.out.println("Barrio ID: "+this.id);
+        System.out.println("Nombre: "+this.nombre);
+        System.out.println("Empresa Constructora: "+this.empresaConstructora);
+        
+        for(Vivienda viv: vivienda){
+            System.out.println(" ");
+            System.out.println("-->Vivienda");
+        viv.mostrar();
+        }
+       
+    
+    }
     
     // Metodo D.1
     public double getSuperficieTotalTerreno(){

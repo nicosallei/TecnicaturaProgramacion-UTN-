@@ -28,6 +28,16 @@ public class Expediente {
     public Expediente() {
     }
 
+    public Expediente(int id, String letra, int numero, String tipo, String ambito, String descripcion) {
+        this.id = id;
+        this.letra = letra;
+        this.numero = numero;
+        this.tipo = tipo;
+        this.ambito = ambito;
+        this.descripcion = descripcion;
+    }
+    
+
     public void addExpediente(Expediente exp){
     this.expediente.add(exp);
     }
@@ -62,19 +72,10 @@ public class Expediente {
     return bandera;
     }
     
-    // Metodo A.4
-    public List<Expediente> listaExpedientes(){
-    List<Expediente> lista = new ArrayList();
-    
-    for(Expediente exp:expediente){
-    lista.add(exp);
-    }
-    return lista;
-    }
-    
+
     // Metodo A.4.Prueba
     
-    public List<Expediente> listaExpedientePrueba(){
+    public List<Expediente> listaExpediente(){
     List<Expediente> lista = new ArrayList();
     listaExpedienteRecursivo(this, lista);
     return lista;
@@ -156,5 +157,14 @@ public class Expediente {
         this.control = control;
     }
 
+    
+    private String rellenarCadena(String cadena){
+        if(cadena.length() > 15){
+            return cadena.substring(0, 15);
+        }else{
+            cadena = cadena + " ";
+            return rellenarCadena(cadena);
+        }
+    }
     
 }

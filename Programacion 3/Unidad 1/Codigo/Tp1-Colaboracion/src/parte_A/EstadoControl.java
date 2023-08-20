@@ -20,6 +20,15 @@ public class EstadoControl {
     public EstadoControl() {
     }
 
+    public EstadoControl(long id, boolean aprobado) {
+        this.id = id;
+        this.aprobado = aprobado;
+    }
+    
+    public void addControl(Control control){
+    this.control.add(control);
+    }
+    
     public long getId() {
         return id;
     }
@@ -44,6 +53,13 @@ public class EstadoControl {
         this.control = control;
     }
     
-    
+    private String rellenarCadena(String cadena){
+        if(cadena.length() > 15){
+            return cadena.substring(0, 15);
+        }else{
+            cadena = cadena + " ";
+            return rellenarCadena(cadena);
+        }
+    }
     
 }

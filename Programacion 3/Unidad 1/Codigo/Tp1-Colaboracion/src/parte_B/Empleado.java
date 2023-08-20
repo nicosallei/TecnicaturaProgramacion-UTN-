@@ -26,6 +26,29 @@ public class Empleado {
     public Empleado() {
     }
 
+    public Empleado(String nombre, long cuit, String domicilio, String email) {
+        this.nombre = nombre;
+        this.cuit = cuit;
+        this.domicilio = domicilio;
+        this.email = email;
+    }
+    
+    public void mostrar(){
+    
+        System.out.println("Nombre: "+this.nombre);
+        System.out.println("Cuit: "+this.cuit);
+        System.out.println("Domicilio: "+this.domicilio);
+        System.out.println("Email: "+this.email);
+        
+        for(Tardanza tar:tardanza){
+        tar.mostrar();
+        }
+        for(Asistencia asi:asistencia){
+        asi.mostrar();
+        }
+    
+    }
+
     
     // Metodo B.2
     public List<Asistencia> getAsistenciaXMesXAnio(int mes,int anio){

@@ -4,8 +4,9 @@
  */
 package parte_B;
 
-import java.util.ArrayList;
+
 import java.util.Date;
+import util.FuncionApp;
 
 /**
  *
@@ -21,12 +22,23 @@ public class Tardanza {
     
     private Empleado empleado;
 
+    public Tardanza() {
+    }
+
     public Tardanza(long id, String tipo, Date fecha, int minuto,int hora) {
         this.id = id;
         this.tipo = tipo;
         this.fecha = fecha;
         this.minuto = minuto;
         this.hora=hora;
+    }
+    
+    public void mostrar(){
+        System.out.println("Tardanza ID: "+this.id);
+        System.out.println("Tipo: "+this.tipo);
+        System.out.println("Fecha "+FuncionApp.convertirDateToString(fecha));
+        System.out.println("Minuto: "+this.minuto);
+        System.out.println("Hora: "+this.hora);
     }
 
     public int getHora() {
