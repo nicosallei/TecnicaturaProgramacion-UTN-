@@ -1,28 +1,26 @@
 package modelo;
 
-
-import jakarta.persistence.*;
-import java.util.ArrayList;
 import java.util.Date;
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+import java.util.List;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 /**
  *
  * @author Nicolas Sallei Correa
  */
 @Entity
-public class HistoriaClinica {
-    
+public class HistoriaClinica implements java.io.Serializable {
+
     private int idHistoriaClinica;
     private int numero;
     private Date fechaAlta;
-    
+
     private Paciente paciente;
-    private ArrayList<DetalleHistoriaClinica> detalleHistoriaClinica = new ArrayList();
+    private List<DetalleHistoriaClinica> detalleHistoriaClinica;
 
     public HistoriaClinica() {
     }
@@ -31,16 +29,14 @@ public class HistoriaClinica {
         this.idHistoriaClinica = idHistoriaClinica;
         this.numero = numero;
         this.fechaAlta = fechaAlta;
-        
-    }
-    
-    
-    
-    public void addDetalleHistoriaClinica(DetalleHistoriaClinica detalle){
-    this.detalleHistoriaClinica.add(detalle);
+
     }
 
-    @OneToOne(mappedBy="paciente")
+    public void addDetalleHistoriaClinica(DetalleHistoriaClinica detalle) {
+        this.detalleHistoriaClinica.add(detalle);
+    }
+
+    @OneToOne(mappedBy = "historiaClinica")
     public Paciente getPaciente() {
         return paciente;
     }
@@ -73,17 +69,14 @@ public class HistoriaClinica {
     public void setFechaAlta(Date fechaAlta) {
         this.fechaAlta = fechaAlta;
     }
-    
-    @OneToMany(mappedBy = "historiaClinica",cascade = CascadeType.ALL)
-    public ArrayList<DetalleHistoriaClinica> getDetalleHistoriaClinica() {
+
+    @OneToMany(mappedBy = "historiaClinica", cascade = CascadeType.ALL)
+    public List<DetalleHistoriaClinica> getDetalleHistoriaClinica() {
         return detalleHistoriaClinica;
     }
 
-    public void setDetalleHistoriaClinica(ArrayList<DetalleHistoriaClinica> detalleHistoriaClinica) {
+    public void setDetalleHistoriaClinica(List<DetalleHistoriaClinica> detalleHistoriaClinica) {
         this.detalleHistoriaClinica = detalleHistoriaClinica;
     }
-    
-    
-    
-    
+
 }

@@ -1,24 +1,30 @@
 package modelo;
 
-import jakarta.persistence.*;
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 /**
  *
  * @author Nicolas Sallei Correa
  */
 @Entity
-public class Persona {
-    
+@Inheritance(strategy = InheritanceType.JOINED)
+public class Persona implements java.io.Serializable {
+
     private int idPersona;
     private String nombre;
     private String apellido;
+
     private long dni;
-    
+
     private Domicilio domicilio;
 
     public Persona() {
@@ -30,8 +36,6 @@ public class Persona {
         this.apellido = apellido;
         this.dni = dni;
     }
-    
-    
 
     @Id
     public int getIdPersona() {
@@ -58,6 +62,7 @@ public class Persona {
         this.apellido = apellido;
     }
 
+    @Column(name = "DNI", unique = true)
     public long getDni() {
         return dni;
     }
@@ -66,7 +71,7 @@ public class Persona {
         this.dni = dni;
     }
 
-    @OneToOne(cascade =(CascadeType.ALL))
+    @OneToOne(cascade = (CascadeType.ALL))
     @JoinColumn(name = "idDomicilio")
     public Domicilio getDomicilio() {
         return domicilio;
@@ -75,7 +80,4 @@ public class Persona {
     public void setDomicilio(Domicilio domicilio) {
         this.domicilio = domicilio;
     }
-    
-    
-    
 }

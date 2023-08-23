@@ -1,28 +1,26 @@
 package modelo;
 
-
-import jakarta.persistence.*;
 import util.FuncionApp;
 import java.util.Date;
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 /**
  *
  * @author Nicolas Sallei Correa
  */
 @Entity
-public class DetalleHistoriaClinica {
-    
+public class DetalleHistoriaClinica implements java.io.Serializable {
+
     private int idDetalleHC;
     private Date fechaAtencion;
     private String sintomas;
     private String diagnostico;
     private String observaciones;
-    
+
     private HistoriaClinica historiaClinica;
 
     public DetalleHistoriaClinica() {
@@ -34,19 +32,6 @@ public class DetalleHistoriaClinica {
         this.sintomas = sintomas;
         this.diagnostico = diagnostico;
         this.observaciones = observaciones;
-    }
-    
-    
-    
-    public void mostrarDetalle(){
-    
-        System.out.println("--- Detalle Clinico ---\n");
-        System.out.println("Detalle ID: "+this.getIdDetalleHC());
-        System.out.println("Fecha Atencion: "+FuncionApp.convertirDateToString(this.fechaAtencion));
-        System.out.println("Sintomas: "+this.getSintomas());
-        System.out.println("Diagnostico: "+this.getDiagnostico());
-        System.out.println("Observaciones: "+this.getObservaciones());
-    
     }
 
     @Id
@@ -91,7 +76,7 @@ public class DetalleHistoriaClinica {
     }
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="idHistoriaClinica")
+    @JoinColumn(name = "idHistoriaClinica")
     public HistoriaClinica getHistoriaClinica() {
         return historiaClinica;
     }
@@ -99,9 +84,16 @@ public class DetalleHistoriaClinica {
     public void setHistoriaClinica(HistoriaClinica historiaClinica) {
         this.historiaClinica = historiaClinica;
     }
-    
-    
-            
-    
-    
+
+    public void mostrarDetalle() {
+
+        System.out.println("--- Detalle Clinico ---\n");
+        System.out.println("Detalle ID: " + this.getIdDetalleHC());
+        System.out.println("Fecha Atencion: " + FuncionApp.convertirDateToString(this.fechaAtencion));
+        System.out.println("Sintomas: " + this.getSintomas());
+        System.out.println("Diagnostico: " + this.getDiagnostico());
+        System.out.println("Observaciones: " + this.getObservaciones());
+
+    }
+
 }

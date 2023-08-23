@@ -1,32 +1,24 @@
 package modelo;
 
-
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import util.FuncionApp;
 import java.util.Date;
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 /**
  *
  * @author Nicolas Sallei Correa
  */
 @Entity
-public class Turno {
-    
-    
+public class Turno implements java.io.Serializable {
+
     private int idTurno;
     private Date fecha;
     private int hora;
     private int minutos;
-    
     private Paciente paciente;
     private Medico medico;
 
@@ -48,21 +40,17 @@ public class Turno {
         this.paciente = paciente;
         this.medico = medico;
     }
-    
-    
-    
-    
-    public void mostrar(){
-    
+
+    public void mostrar() {
+
         System.out.println("----   Turno   ----\n");
-        System.out.println("Turno ID: "+this.getIdTurno());
-        System.out.println("Fecha: "+FuncionApp.convertirDateToString(this.fecha));
-        System.out.println("Hora: "+this.hora+":"+this.getMinutos()+"\n");
+        System.out.println("Turno ID: " + this.getIdTurno());
+        System.out.println("Fecha: " + FuncionApp.convertirDateToString(this.fecha));
+        System.out.println("Hora: " + this.hora + ":" + this.getMinutos() + "\n");
     }
 
-    
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="idMedico")
+    @JoinColumn(name = "idMedico")
     public Medico getMedico() {
         return medico;
     }
@@ -70,10 +58,9 @@ public class Turno {
     public void setMedico(Medico medico) {
         this.medico = medico;
     }
-    
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="idPaciente")
+    @JoinColumn(name = "idPaciente")
     public Paciente getPaciente() {
         return paciente;
     }
@@ -81,8 +68,6 @@ public class Turno {
     public void setPaciente(Paciente paciente) {
         this.paciente = paciente;
     }
-    
-    
 
     @Id
     public int getIdTurno() {
@@ -116,7 +101,5 @@ public class Turno {
     public void setMinutos(int minutos) {
         this.minutos = minutos;
     }
-    
-    
-    
+
 }

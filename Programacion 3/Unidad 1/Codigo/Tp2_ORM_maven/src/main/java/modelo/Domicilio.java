@@ -1,25 +1,25 @@
 package modelo;
 
-import jakarta.persistence.*;
-
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 /**
  *
  * @author Nicolas Sallei Correa
  */
 @Entity
-public class Domicilio {
-    
+public class Domicilio implements java.io.Serializable {
+
     private int idDomicilio;
     private String localidad;
     private String calle;
     private int numero;
-    
+
     private Persona persona;
 
     public Domicilio() {
@@ -31,7 +31,6 @@ public class Domicilio {
         this.calle = calle;
         this.numero = numero;
     }
-
 
     @Id
     public int getIdDomicilio() {
@@ -66,7 +65,7 @@ public class Domicilio {
         this.numero = numero;
     }
 
-    @OneToOne(mappedBy="persona")
+    @OneToOne(mappedBy = "domicilio")
     public Persona getPersona() {
         return persona;
     }
@@ -74,7 +73,5 @@ public class Domicilio {
     public void setPersona(Persona persona) {
         this.persona = persona;
     }
-    
-    
-    
+
 }

@@ -1,0 +1,14 @@
+controlador\GestorFactura.class
+controlador\Gestor.class
+modelo\Proveedor.class
+modelo\TipoArticulo.class
+persistencia\ConfigHibernate.class
+controlador\GestorProveedores.class
+modelo\Pais.class
+modelo\EntityBean.class
+modelo\Domicilio.class
+modelo\Factura.class
+modelo\FacturaDetalle.class
+orm\Main.class
+com\utn\ormmysql8\NewMain.class
+modelo\Articulo.class

@@ -1,26 +1,25 @@
 package modelo;
 
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 /**
  *
  * @author Nicolas Sallei Correa
  */
 @Entity
-public class Especialidad {
-    
+public class Especialidad implements java.io.Serializable {
+
     private int idEspecialidad;
     private String denominacion;
-    
-    private ArrayList<Medico> medico = new ArrayList();
+
+    private List<Medico> medico;
 
     public Especialidad() {
     }
@@ -29,12 +28,11 @@ public class Especialidad {
         this.idEspecialidad = idEspecialidad;
         this.denominacion = denominacion;
     }
-    
-    
-    public void addMedico(Medico medic){
-    this.medico.add(medic);
+
+    public void addMedico(Medico medic) {
+        this.medico.add(medic);
     }
-    
+
     @Id
     public int getIdEspecialidad() {
         return idEspecialidad;
@@ -52,15 +50,13 @@ public class Especialidad {
         this.denominacion = denominacion;
     }
 
-    public ArrayList<Medico> getMedico() {
+    @ManyToMany(mappedBy = "especialidad")
+    public List<Medico> getMedico() {
         return medico;
     }
 
-    public void setMedico(ArrayList<Medico> medico) {
+    public void setMedico(List<Medico> medico) {
         this.medico = medico;
     }
-    
-    
-    
-    
+
 }
