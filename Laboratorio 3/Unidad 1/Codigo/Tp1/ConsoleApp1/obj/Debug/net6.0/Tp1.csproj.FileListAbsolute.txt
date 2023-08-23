@@ -1,0 +1,28 @@
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\Tp1.exe
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\Tp1.deps.json
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\Tp1.runtimeconfig.json
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\Tp1.dll
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\Tp1.pdb
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Tp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Tp1.AssemblyInfoInputs.cache
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Tp1.AssemblyInfo.cs
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Tp1.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Tp1.dll
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\refint\Tp1.dll
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Tp1.pdb
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Tp1.genruntimeconfig.cache
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ref\Tp1.dll
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\bin\Debug\net6.0\Tp1.exe
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\bin\Debug\net6.0\Tp1.deps.json
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\bin\Debug\net6.0\Tp1.runtimeconfig.json
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\bin\Debug\net6.0\Tp1.dll
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\bin\Debug\net6.0\Tp1.pdb
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\obj\Debug\net6.0\Tp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\obj\Debug\net6.0\Tp1.AssemblyInfoInputs.cache
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\obj\Debug\net6.0\Tp1.AssemblyInfo.cs
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\obj\Debug\net6.0\Tp1.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\obj\Debug\net6.0\Tp1.dll
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\obj\Debug\net6.0\refint\Tp1.dll
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\obj\Debug\net6.0\Tp1.pdb
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\obj\Debug\net6.0\Tp1.genruntimeconfig.cache
+C:\Users\nicos\Documents\Git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp1\ConsoleApp1\obj\Debug\net6.0\ref\Tp1.dll
