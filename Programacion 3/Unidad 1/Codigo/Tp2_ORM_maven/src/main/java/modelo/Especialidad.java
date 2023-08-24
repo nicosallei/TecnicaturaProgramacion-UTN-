@@ -1,5 +1,6 @@
 package modelo;
 
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -19,7 +20,7 @@ public class Especialidad implements java.io.Serializable {
     private int idEspecialidad;
     private String denominacion;
 
-    private List<Medico> medico;
+    private List<Medico> medico = new ArrayList();
 
     public Especialidad() {
     }

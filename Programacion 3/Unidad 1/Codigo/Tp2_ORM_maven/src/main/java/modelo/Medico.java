@@ -1,5 +1,6 @@
 package modelo;
 
+import java.util.ArrayList;
 import util.FuncionApp;
 import java.util.List;
 import javax.persistence.CascadeType;
@@ -19,8 +20,8 @@ public class Medico extends Persona implements java.io.Serializable {
 
     private int matricula;
     private long celular;
-    private List<Turno> turno;
-    private List<Especialidad> especialidad;
+    private List<Turno> turno = new ArrayList();
+    private List<Especialidad> especialidad= new ArrayList();
 
     public Medico() {
     }

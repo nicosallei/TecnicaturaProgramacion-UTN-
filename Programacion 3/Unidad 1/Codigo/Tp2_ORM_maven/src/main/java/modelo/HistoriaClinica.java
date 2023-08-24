@@ -1,5 +1,6 @@
 package modelo;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.CascadeType;
@@ -18,9 +19,8 @@ public class HistoriaClinica implements java.io.Serializable {
     private int idHistoriaClinica;
     private int numero;
     private Date fechaAlta;
-
     private Paciente paciente;
-    private List<DetalleHistoriaClinica> detalleHistoriaClinica;
+    private List<DetalleHistoriaClinica> detalleHistoriaClinica = new ArrayList();
 
     public HistoriaClinica() {
     }

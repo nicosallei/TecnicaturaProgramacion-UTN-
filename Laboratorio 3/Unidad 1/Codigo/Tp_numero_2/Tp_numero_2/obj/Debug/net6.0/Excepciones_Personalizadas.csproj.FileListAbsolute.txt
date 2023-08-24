@@ -1,0 +1,14 @@
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\bin\Debug\net6.0\Excepciones_Personalizadas.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\bin\Debug\net6.0\Excepciones_Personalizadas.deps.json
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\bin\Debug\net6.0\Excepciones_Personalizadas.runtimeconfig.json
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\bin\Debug\net6.0\Excepciones_Personalizadas.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\bin\Debug\net6.0\Excepciones_Personalizadas.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Excepciones_Personalizadas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Excepciones_Personalizadas.AssemblyInfoInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Excepciones_Personalizadas.AssemblyInfo.cs
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Excepciones_Personalizadas.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Excepciones_Personalizadas.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\refint\Excepciones_Personalizadas.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Excepciones_Personalizadas.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Excepciones_Personalizadas.genruntimeconfig.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\ref\Excepciones_Personalizadas.dll

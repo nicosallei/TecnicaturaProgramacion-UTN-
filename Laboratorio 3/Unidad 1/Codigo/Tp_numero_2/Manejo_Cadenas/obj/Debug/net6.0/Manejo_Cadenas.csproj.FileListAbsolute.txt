@@ -1,0 +1,14 @@
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\bin\Debug\net6.0\Manejo_Cadenas.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\bin\Debug\net6.0\Manejo_Cadenas.deps.json
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\bin\Debug\net6.0\Manejo_Cadenas.runtimeconfig.json
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\bin\Debug\net6.0\Manejo_Cadenas.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\bin\Debug\net6.0\Manejo_Cadenas.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\obj\Debug\net6.0\Manejo_Cadenas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\obj\Debug\net6.0\Manejo_Cadenas.AssemblyInfoInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\obj\Debug\net6.0\Manejo_Cadenas.AssemblyInfo.cs
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\obj\Debug\net6.0\Manejo_Cadenas.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\obj\Debug\net6.0\Manejo_Cadenas.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\obj\Debug\net6.0\refint\Manejo_Cadenas.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\obj\Debug\net6.0\Manejo_Cadenas.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\obj\Debug\net6.0\Manejo_Cadenas.genruntimeconfig.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Manejo_Cadenas\obj\Debug\net6.0\ref\Manejo_Cadenas.dll

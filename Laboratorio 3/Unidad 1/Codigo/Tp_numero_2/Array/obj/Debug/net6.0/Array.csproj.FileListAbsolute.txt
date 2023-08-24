@@ -1,0 +1,14 @@
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\bin\Debug\net6.0\Array.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\bin\Debug\net6.0\Array.deps.json
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\bin\Debug\net6.0\Array.runtimeconfig.json
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\bin\Debug\net6.0\Array.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\bin\Debug\net6.0\Array.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\obj\Debug\net6.0\Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\obj\Debug\net6.0\Array.AssemblyInfoInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\obj\Debug\net6.0\Array.AssemblyInfo.cs
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\obj\Debug\net6.0\Array.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\obj\Debug\net6.0\Array.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\obj\Debug\net6.0\refint\Array.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\obj\Debug\net6.0\Array.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\obj\Debug\net6.0\Array.genruntimeconfig.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Array\obj\Debug\net6.0\ref\Array.dll

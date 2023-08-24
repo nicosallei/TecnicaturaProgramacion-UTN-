@@ -1,0 +1,14 @@
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\bin\Debug\net6.0\D.7_Herencia_Polimorfismo.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\bin\Debug\net6.0\D.7_Herencia_Polimorfismo.deps.json
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\bin\Debug\net6.0\D.7_Herencia_Polimorfismo.runtimeconfig.json
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\bin\Debug\net6.0\D.7_Herencia_Polimorfismo.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\bin\Debug\net6.0\D.7_Herencia_Polimorfismo.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\obj\Debug\net6.0\D.7_Herencia_Polimorfismo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\obj\Debug\net6.0\D.7_Herencia_Polimorfismo.AssemblyInfoInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\obj\Debug\net6.0\D.7_Herencia_Polimorfismo.AssemblyInfo.cs
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\obj\Debug\net6.0\D.7_Herencia_Polimorfismo.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\obj\Debug\net6.0\D.7_Herencia_Polimorfismo.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\obj\Debug\net6.0\refint\D.7_Herencia_Polimorfismo.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\obj\Debug\net6.0\D.7_Herencia_Polimorfismo.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\obj\Debug\net6.0\D.7_Herencia_Polimorfismo.genruntimeconfig.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\D.7_Herencia_Polimorfismo\obj\Debug\net6.0\ref\D.7_Herencia_Polimorfismo.dll

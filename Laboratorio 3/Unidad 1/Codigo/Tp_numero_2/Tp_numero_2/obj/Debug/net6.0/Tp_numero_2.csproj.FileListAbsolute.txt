@@ -1,0 +1,14 @@
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Tp_numero_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Tp_numero_2.AssemblyInfoInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Tp_numero_2.AssemblyInfo.cs
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Tp_numero_2.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\bin\Debug\net6.0\Tp_numero_2.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\bin\Debug\net6.0\Tp_numero_2.deps.json
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\bin\Debug\net6.0\Tp_numero_2.runtimeconfig.json
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\bin\Debug\net6.0\Tp_numero_2.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\bin\Debug\net6.0\Tp_numero_2.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Tp_numero_2.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\refint\Tp_numero_2.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Tp_numero_2.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\Tp_numero_2.genruntimeconfig.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp_numero_2\Tp_numero_2\obj\Debug\net6.0\ref\Tp_numero_2.dll
