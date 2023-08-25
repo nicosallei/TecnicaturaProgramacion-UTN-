@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicos\\Desktop\\Archivos de git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp_numero_2\\E_Hilos\\E_Hilos.csproj",
+      "projectUniqueName": "C:\\Users\\nicos\\Documents\\Git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp_numero_2\\E_Hilos\\E_Hilos.csproj",
       "projectName": "E_Hilos",
-      "projectPath": "C:\\Users\\nicos\\Desktop\\Archivos de git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp_numero_2\\E_Hilos\\E_Hilos.csproj",
+      "projectPath": "C:\\Users\\nicos\\Documents\\Git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp_numero_2\\E_Hilos\\E_Hilos.csproj",
       "packagesPath": "C:\\Users\\nicos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicos\\Desktop\\Archivos de git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp_numero_2\\E_Hilos\\obj\\",
+      "outputPath": "C:\\Users\\nicos\\Documents\\Git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp_numero_2\\E_Hilos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicos\\AppData\\Roaming\\NuGet\\NuGet.Config",
