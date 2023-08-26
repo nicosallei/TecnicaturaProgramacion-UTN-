@@ -91,31 +91,9 @@ public class ORM {
         det01.setHistoriaClinica(hist01);
         det02.setHistoriaClinica(hist02);
             
-            
-            
+
             gestor.guardar(doc02);
             gestor.guardar(doc01);
-            
-//            gestor.guardar(pac01);
-//            gestor.guardar(pac02);
-              
-            
-            
-            
-            
-            
-            
-            
-            
-//            
-//            Medico medi01 = new Medico(145,2648513,11,"roberto","perez",156185181);
-//            
-//            Paciente pac = new Paciente(1247,02,"Pedro","Lopez",423548952);
-//            
-////             seteo de los atributos
-//            gestor.guardar(medi01);
-//            
-//            gestor.guardar(pac);
 
         } catch (Exception e) {
             e.printStackTrace();

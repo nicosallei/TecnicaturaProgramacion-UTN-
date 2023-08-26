@@ -7,10 +7,7 @@ package controlador;
 
 import persistencia.ConfigHibernate;
 
-/**
- *
- * @author Docente
- */
+
 public class GestorORM extends Gestor {
 
     public GestorORM() {

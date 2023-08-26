@@ -1,5 +1,2 @@
-controlador\GestorFactura.class
-main\Prueba.class
 controlador\Gestor.class
 persistencia\ConfigHibernate.class
-controlador\GestorProveedores.class

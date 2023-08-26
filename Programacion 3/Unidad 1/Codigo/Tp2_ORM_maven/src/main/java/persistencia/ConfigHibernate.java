@@ -75,54 +75,7 @@ public class ConfigHibernate {
         }
     }
 
-    /*public boolean saveEntity(Session sezion, EntityBean entity) {
-		Transaction tx = null;
-
-		if(!sezion.getTransaction().isActive())
-			tx = sezion.beginTransaction();
-
-		sezion.saveOrUpdate(entity);
-
-		if(tx != null)
-			tx.commit();
-
-		return true;
-	}
-
-	public boolean deleteEntity(Session sezion, EntityBean entity) {
-		Transaction tx = sezion.beginTransaction();
-
-		sezion.delete(entity);
-
-		tx.commit();
-
-		return true;
-	}
-
-	public boolean updateEntity(Session sezion, EntityBean entity) {
-		Transaction tx = null;
-
-		if(!sezion.getTransaction().isActive())
-			tx = sezion.beginTransaction();
-
-		sezion.update(entity);
-
-		if(tx != null)
-			tx.commit();
-
-		return true;
-	}
-
-	public boolean deleteEntitys(Session sezion, List entities) {
-
-		for(Iterator i = entities.iterator(); i.hasNext();) {
-			EntityBean entity = (EntityBean)i.next();
-
-			sezion.delete(entity);
-		}
-
-		return true;
-	}*/
+    
     public void destroy() {
         closeSessionFactory();
     }

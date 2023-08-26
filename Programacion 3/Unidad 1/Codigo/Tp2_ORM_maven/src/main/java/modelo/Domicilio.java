@@ -3,23 +3,25 @@ package modelo;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 /**
  *
  * @author Nicolas Sallei Correa
  */
+
 @Entity
+@Table(name="Domicilio_Personas")   // si le saco esto me tira error.
 public class Domicilio implements java.io.Serializable {
 
+    
     private int idDomicilio;
     private String localidad;
     private String calle;
     private int numero;
 
+    
     private Persona persona;
 
     public Domicilio() {
@@ -32,7 +34,7 @@ public class Domicilio implements java.io.Serializable {
         this.numero = numero;
     }
 
-    @Id
+   @Id
     public int getIdDomicilio() {
         return idDomicilio;
     }
