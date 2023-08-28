@@ -11,9 +11,7 @@ import modelo.Paciente;
 import modelo.Turno;
 import util.FuncionApp;
 
-/**
- * Nicolas sallei
- */
+
 public class ORM {
 
     /**
@@ -91,9 +89,12 @@ public class ORM {
         det01.setHistoriaClinica(hist01);
         det02.setHistoriaClinica(hist02);
             
-
+            
+            
             gestor.guardar(doc02);
             gestor.guardar(doc01);
+            
+
 
         } catch (Exception e) {
             e.printStackTrace();

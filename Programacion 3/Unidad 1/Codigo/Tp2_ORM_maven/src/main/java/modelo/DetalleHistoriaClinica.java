@@ -85,15 +85,6 @@ public class DetalleHistoriaClinica implements java.io.Serializable {
         this.historiaClinica = historiaClinica;
     }
 
-    public void mostrarDetalle() {
-
-        System.out.println("--- Detalle Clinico ---\n");
-        System.out.println("Detalle ID: " + this.getIdDetalleHC());
-        System.out.println("Fecha Atencion: " + FuncionApp.convertirDateToString(this.fechaAtencion));
-        System.out.println("Sintomas: " + this.getSintomas());
-        System.out.println("Diagnostico: " + this.getDiagnostico());
-        System.out.println("Observaciones: " + this.getObservaciones());
-
-    }
+   
 
 }

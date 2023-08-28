@@ -10,7 +10,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
 /**
- *
  * @author Nicolas Sallei Correa
  */
 @Entity
@@ -20,7 +19,6 @@ public class Persona implements java.io.Serializable {
     private int idPersona;
     private String nombre;
     private String apellido;
-
     private long dni;
 
     private Domicilio domicilio;

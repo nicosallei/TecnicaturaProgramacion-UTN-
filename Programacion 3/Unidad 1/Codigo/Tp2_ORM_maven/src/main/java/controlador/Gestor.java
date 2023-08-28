@@ -1,14 +1,13 @@
 package controlador;
 
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import persistencia.ConfigHibernate;
 
 public class Gestor {
 
-
     private static ConfigHibernate configHibernate;
-
     protected Session sesion;
 
     public Gestor() {
@@ -37,7 +36,8 @@ public class Gestor {
         }
     }
 
-    
+   
+
     public void eliminar(Object o) throws Exception {
         boolean eliminar = false;
         Transaction tx = null;
@@ -71,6 +71,8 @@ public class Gestor {
     public static void setHu(ConfigHibernate configHibernate) {
         Gestor.configHibernate = configHibernate;
     }
+
+  
 
     public Session getSesion() {
         return sesion;

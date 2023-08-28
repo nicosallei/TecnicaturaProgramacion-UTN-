@@ -12,7 +12,6 @@ import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 
 /**
- *
  * @author Nicolas Sallei Correa
  */
 @Entity
@@ -37,47 +36,6 @@ public class Medico extends Persona implements java.io.Serializable {
         this.celular = celular;
     }
 
-    public void mostrarMedico() {
-        System.out.println("-----  Medico   ----\n");
-        System.out.println("Matricula: " + this.getMatricula());
-        System.out.println("Celular: " + this.getCelular() + "\n");
-
-        System.out.println("----Persona----\n");
-        System.out.println("Persona ID: " + this.getIdPersona());
-        System.out.println("Nombre: " + this.getNombre());
-        System.out.println("Apellido: " + this.getApellido());
-        System.out.println("DNI: " + this.getDni() + "\n");
-
-        System.out.println("--------Domicilio--------\n");
-        System.out.println("Domicilio ID: " + this.getDomicilio().getIdDomicilio());
-        System.out.println("Localidad: " + this.getDomicilio().getLocalidad());
-        System.out.println("Calle: " + this.getDomicilio().getCalle());
-        System.out.println("Numero: " + this.getDomicilio().getNumero() + "\n");
-
-        System.out.println("--------  Especialidades Medico  ---------\n");
-        for (Especialidad esp : especialidad) {
-            System.out.println("Especialidad ID: " + esp.getIdEspecialidad());
-            System.out.println("Denominacion: " + esp.getDenominacion());
-            System.out.println("---    ---\n");
-
-        }
-
-    }
-
-    public void mostrarTurnos() {
-
-        for (Turno tur : turno) {
-
-            System.out.println("---  Turno  ---\n");
-            System.out.println("Turno ID: " + tur.getIdTurno());
-            System.out.println("Fecha: " + FuncionApp.convertirDateToString(tur.getFecha()));
-            System.out.println("Hora: " + tur.getHora() + ":" + tur.getMinutos() + "\n");
-
-            tur.getPaciente().mostrarPaciente();
-
-        }
-
-    }
 
     public void addTurno(Turno turn) {
         this.turno.add(turn);

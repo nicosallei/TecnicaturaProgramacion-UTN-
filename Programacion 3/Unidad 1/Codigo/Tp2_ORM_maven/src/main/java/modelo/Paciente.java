@@ -1,7 +1,6 @@
 package modelo;
 
 import java.util.ArrayList;
-import util.FuncionApp;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -10,7 +9,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 /**
- *
  * @author Nicolas Sallei Correa
  */
 @Entity
@@ -32,39 +30,6 @@ public class Paciente extends Persona implements java.io.Serializable {
         this.nroSocio = nroSocio;
     }
 
-    public void mostrarPaciente() {
-
-        System.out.println("---- Paciente ----\n");
-        System.out.println("Numero Socio: " + this.getNroSocio() + "\n");
-
-        System.out.println("Apellido y Nombre: " + this.getApellido() + " " + this.getNombre());
-        System.out.println("DNI: " + this.getDni());
-        System.out.println("Localidad: " + this.getDomicilio().getLocalidad() + " Calle: " + this.getDomicilio().getCalle() + " Numero: " + this.getDomicilio().getNumero() + "\n");
-
-    }
-
-    public void mostrarHistorialClinico() {
-
-        System.out.println("Hitoria Clinica ID: " + this.getHistoriaClinica().getIdHistoriaClinica());
-        System.out.println("Fecha Alta: " + FuncionApp.convertirDateToString(this.getHistoriaClinica().getFechaAlta()) + "\n");
-
-        System.out.println("-----  Detalle Hitoria Clinica  -----\n");
-
-        for (DetalleHistoriaClinica detalle : this.historiaClinica.getDetalleHistoriaClinica()) {
-
-            detalle.mostrarDetalle();
-        }
-    }
-
-    public void mostrarTurnos() {
-
-        for (Turno tur : turno) {
-
-            tur.mostrar();
-            tur.getMedico().mostrarMedico();
-
-        }
-    }
 
     public void addTurno(Turno turn) {
         this.turno.add(turn);

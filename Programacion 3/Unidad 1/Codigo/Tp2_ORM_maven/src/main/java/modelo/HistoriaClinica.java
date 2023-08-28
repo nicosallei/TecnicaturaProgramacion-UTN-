@@ -10,7 +10,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 /**
- *
  * @author Nicolas Sallei Correa
  */
 @Entity

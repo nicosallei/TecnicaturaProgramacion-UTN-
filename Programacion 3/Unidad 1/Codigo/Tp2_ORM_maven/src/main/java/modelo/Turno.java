@@ -9,7 +9,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 /**
- *
  * @author Nicolas Sallei Correa
  */
 @Entity
@@ -39,14 +38,6 @@ public class Turno implements java.io.Serializable {
         this.minutos = minutos;
         this.paciente = paciente;
         this.medico = medico;
-    }
-
-    public void mostrar() {
-
-        System.out.println("----   Turno   ----\n");
-        System.out.println("Turno ID: " + this.getIdTurno());
-        System.out.println("Fecha: " + FuncionApp.convertirDateToString(this.fecha));
-        System.out.println("Hora: " + this.hora + ":" + this.getMinutos() + "\n");
     }
 
     @ManyToOne(cascade = CascadeType.ALL)
