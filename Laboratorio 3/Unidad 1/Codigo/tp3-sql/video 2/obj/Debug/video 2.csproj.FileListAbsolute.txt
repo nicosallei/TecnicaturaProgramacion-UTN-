@@ -1,0 +1,17 @@
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\bin\Debug\video 2.exe.config
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\bin\Debug\video 2.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\bin\Debug\video 2.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\bin\Debug\MySql.Data.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\bin\Debug\System.Memory.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\bin\Debug\System.Buffers.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\bin\Debug\MySql.Data.xml
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\obj\Debug\video 2.csproj.AssemblyReference.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\obj\Debug\video_2.Form1.resources
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\obj\Debug\video_2.Properties.Resources.resources
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\obj\Debug\video 2.csproj.GenerateResource.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\obj\Debug\video 2.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\obj\Debug\video 2.csproj.CopyComplete
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\obj\Debug\video 2.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\tp3-sql\video 2\obj\Debug\video 2.pdb

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicos\\Documents\\Git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp_numero_2\\D.7_Herencia_Polimorfismo\\D.7_Herencia_Polimorfismo.csproj",
+      "projectUniqueName": "C:\\Users\\nicos\\Desktop\\Archivos de git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp_numero_2\\D.7_Herencia_Polimorfismo\\D.7_Herencia_Polimorfismo.csproj",
       "projectName": "D.7_Herencia_Polimorfismo",
-      "projectPath": "C:\\Users\\nicos\\Documents\\Git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp_numero_2\\D.7_Herencia_Polimorfismo\\D.7_Herencia_Polimorfismo.csproj",
+      "projectPath": "C:\\Users\\nicos\\Desktop\\Archivos de git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp_numero_2\\D.7_Herencia_Polimorfismo\\D.7_Herencia_Polimorfismo.csproj",
       "packagesPath": "C:\\Users\\nicos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicos\\Documents\\Git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp_numero_2\\D.7_Herencia_Polimorfismo\\obj\\",
+      "outputPath": "C:\\Users\\nicos\\Desktop\\Archivos de git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp_numero_2\\D.7_Herencia_Polimorfismo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicos\\AppData\\Roaming\\NuGet\\NuGet.Config",
