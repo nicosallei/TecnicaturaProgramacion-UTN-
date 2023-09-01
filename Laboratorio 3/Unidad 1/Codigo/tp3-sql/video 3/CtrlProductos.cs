@@ -37,9 +37,9 @@ namespace video_3
                     Productos _producto = new Productos();
                     _producto.Id = int.Parse(reader.GetString(0));
                     _producto.Codigo = reader[1].ToString();
-                    _producto.Nombre = reader.GetString("descripcion");
+                    _producto.Nombre = reader.GetString("nombre");
                     _producto.Descripcion = reader[3].ToString();
-                    _producto.Precio_publico = double.Parse(reader[4].ToString());
+                    _producto.Precio_publico = float.Parse(reader[4].ToString());
                     _producto.Existencia = int.Parse(reader.GetString(5));
                     lista.Add(_producto);
                 }
@@ -54,8 +54,7 @@ namespace video_3
         public bool insertar(Productos datos) {
 
             bool bandera = false;
-            string sql = "INSERT INTO productos (codigo,nombre,descripcion,precio_publico,existencia) " +
-                "VALUES ('" + datos.Codigo + "','" + datos.Nombre + "','" + datos.Descripcion + "','" + datos.Precio_publico + "','" + datos.Existencia + "')";
+            string sql = "INSERT INTO productos (codigo,nombre,descripcion,precio_publico,existencia) VALUES ('" + datos.Codigo + "','" + datos.Nombre + "','" + datos.Descripcion + "','" + datos.Precio_publico + "','" + datos.Existencia + "')";
 
             try
             {
@@ -81,9 +80,7 @@ namespace video_3
         {
 
             bool bandera = false;
-            string sql = "UPDATE  productos " +
-                "SET codigo='" + datos.Codigo + "',nombre='" + datos.Nombre + "',descripcion='" + datos.Descripcion + 
-                "',precio_publico='" + datos.Precio_publico + "',existencia='" + datos.Existencia + "' WHERE id='" + datos.Id+ "')";
+            string sql = "UPDATE  productos SET codigo='" + datos.Codigo + "',nombre='" + datos.Nombre + "',descripcion='" + datos.Descripcion +"',precio_publico='" + datos.Precio_publico + "',existencia='" + datos.Existencia + "' WHERE id='" + datos.Id+ "'";
 
             try
             {
@@ -110,7 +107,7 @@ namespace video_3
         {
 
             bool bandera = false;
-            string sql = "DELETE  FROM productos   WHERE id='" +id + "')";
+            string sql = "DELETE  FROM productos   WHERE id='" +id + "'";
 
             try
             {
