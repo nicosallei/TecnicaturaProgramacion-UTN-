@@ -1,0 +1,17 @@
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\obj\Debug\net6.0\Tp4_READ-WRITE-FILES.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\obj\Debug\net6.0\Tp4_READ-WRITE-FILES.AssemblyInfoInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\obj\Debug\net6.0\Tp4_READ-WRITE-FILES.AssemblyInfo.cs
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\obj\Debug\net6.0\Tp4_READ-WRITE-FILES.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\obj\Debug\net6.0\Tp4_READ-WRITE-FILES.csproj.AssemblyReference.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\bin\Debug\net6.0\Tp4_READ-WRITE-FILES.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\bin\Debug\net6.0\Tp4_READ-WRITE-FILES.deps.json
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\bin\Debug\net6.0\Tp4_READ-WRITE-FILES.runtimeconfig.json
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\bin\Debug\net6.0\Tp4_READ-WRITE-FILES.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\bin\Debug\net6.0\Tp4_READ-WRITE-FILES.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\obj\Debug\net6.0\Tp4_READ-WRITE-FILES.csproj.CopyComplete
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\obj\Debug\net6.0\Tp4_READ-WRITE-FILES.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\obj\Debug\net6.0\refint\Tp4_READ-WRITE-FILES.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\obj\Debug\net6.0\Tp4_READ-WRITE-FILES.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\obj\Debug\net6.0\Tp4_READ-WRITE-FILES.genruntimeconfig.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\obj\Debug\net6.0\ref\Tp4_READ-WRITE-FILES.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4_READ-WRITE-FILES\Tp4_READ-WRITE-FILES\bin\Debug\net6.0\MySqlConnector.dll

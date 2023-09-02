@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "P5eAv+UzZQnzofa18Bew3j4STs7KfS4JyaG3BBce0F6aXOP2R+ZPgZxryDTcYRgvW5tP/x2YE/Rg/mmq3cdnzA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nicos\\Desktop\\Archivos de git\\TecnicaturaProgramacion-UTN-\\Laboratorio 3\\Unidad 1\\Codigo\\Tp4_READ-WRITE-FILES\\Tp4_READ-WRITE-FILES\\Tp4_READ-WRITE-FILES.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nicos\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512"
+  ],
+  "logs": []
+}

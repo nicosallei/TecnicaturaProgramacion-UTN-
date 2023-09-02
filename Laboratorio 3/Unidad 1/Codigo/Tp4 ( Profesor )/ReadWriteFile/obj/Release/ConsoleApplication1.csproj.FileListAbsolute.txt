@@ -1,0 +1,6 @@
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4 ( Profesor )\ReadWriteFile\bin\Release\ConsoleApplication1.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4 ( Profesor )\ReadWriteFile\bin\Release\ConsoleApplication1.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4 ( Profesor )\ReadWriteFile\obj\Release\ConsoleApplication1.csproj.AssemblyReference.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4 ( Profesor )\ReadWriteFile\obj\Release\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4 ( Profesor )\ReadWriteFile\obj\Release\ConsoleApplication1.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4 ( Profesor )\ReadWriteFile\obj\Release\ConsoleApplication1.pdb

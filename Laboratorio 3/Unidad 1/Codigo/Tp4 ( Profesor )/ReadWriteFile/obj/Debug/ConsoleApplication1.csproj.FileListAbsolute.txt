@@ -1,0 +1,18 @@
+D:\DOCENTE\MAGNI\PRACTICAS\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\DOCENTE\MAGNI\PRACTICAS\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\DOCENTE\MAGNI\PRACTICAS\ConsoleApplication1\ConsoleApplication1\obj\Debug\ResolveAssemblyReference.cache
+D:\DOCENTE\MAGNI\PRACTICAS\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\DOCENTE\MAGNI\PRACTICAS\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\DOCENTE\MAGNI\LAB 3\RW\ReadWriteFile\obj\Debug\ConsoleApplication1.exe
+D:\DOCENTE\MAGNI\LAB 3\RW\ReadWriteFile\obj\Debug\ConsoleApplication1.pdb
+D:\GERARDO\UTN\LAB 3\2020\CLASE 4\ReadWriteFile\bin\Debug\ConsoleApplication1.exe
+D:\GERARDO\UTN\LAB 3\2020\CLASE 4\ReadWriteFile\bin\Debug\ConsoleApplication1.pdb
+D:\GERARDO\UTN\LAB 3\2020\CLASE 4\ReadWriteFile\obj\Debug\ConsoleApplication1.csprojAssemblyReference.cache
+D:\GERARDO\UTN\LAB 3\2020\CLASE 4\ReadWriteFile\obj\Debug\ConsoleApplication1.exe
+D:\GERARDO\UTN\LAB 3\2020\CLASE 4\ReadWriteFile\obj\Debug\ConsoleApplication1.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4 ( Profesor )\ReadWriteFile\bin\Debug\ConsoleApplication1.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4 ( Profesor )\ReadWriteFile\bin\Debug\ConsoleApplication1.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4 ( Profesor )\ReadWriteFile\obj\Debug\ConsoleApplication1.csproj.AssemblyReference.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4 ( Profesor )\ReadWriteFile\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4 ( Profesor )\ReadWriteFile\obj\Debug\ConsoleApplication1.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Codigo\Tp4 ( Profesor )\ReadWriteFile\obj\Debug\ConsoleApplication1.pdb
