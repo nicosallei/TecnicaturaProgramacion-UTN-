@@ -4,9 +4,12 @@
  */
 package modelo;
 
+import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
 
 /**
  *
@@ -20,7 +23,7 @@ public class Computadora extends EntityBean {
     private String marca;
     private String modelo;
 
-    private List<Componente> componente;
+    private List<Componente> componente = new ArrayList();
     
     public Computadora() {
     }
@@ -55,13 +58,18 @@ public class Computadora extends EntityBean {
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
-
+    
+    @OneToMany(mappedBy = "computadora", cascade = CascadeType.ALL)
     public List<Componente> getComponente() {
         return componente;
     }
 
     public void setComponente(List<Componente> componente) {
         this.componente = componente;
+    }
+
+    public void setId(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     

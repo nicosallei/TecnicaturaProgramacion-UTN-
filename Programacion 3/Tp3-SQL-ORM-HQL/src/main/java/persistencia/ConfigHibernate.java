@@ -1,5 +1,6 @@
 package persistencia;
 
+import conexion.BaseDeDatos;
 import java.util.Iterator;
 import java.util.List;
 import modelo.*;
@@ -15,11 +16,12 @@ public class ConfigHibernate {
     public static void load(){
 
         try {
+            BaseDeDatos base = new BaseDeDatos();
             AnnotationConfiguration config = new AnnotationConfiguration();
-            config.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/BD_Computadoras?useTimezone=true&serverTimezone=UTC");
+            config.setProperty("hibernate.connection.url", "jdbc:mysql://"+base.getHost()+":"+base.getPuerto()+"/"+base.getCatalogo()+"?useTimezone=true&serverTimezone=UTC");
             config.setProperty("hibernate.connection.driver_class", "com.mysql.cj.jdbc.Driver");
-            config.setProperty("hibernate.connection.username", "root");
-            config.setProperty("hibernate.connection.password", "123456");
+            config.setProperty("hibernate.connection.username", ""+base.getUser()+"");
+            config.setProperty("hibernate.connection.password", ""+base.getPassword()+"");
             config.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
             config.setProperty("hibernate.show_sql", "true");
             config.setProperty("hibernate.hbm2ddl.auto", "update" );

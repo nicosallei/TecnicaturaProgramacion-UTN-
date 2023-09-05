@@ -4,8 +4,10 @@
  */
 package modelo;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -46,6 +48,8 @@ public class Componente extends EntityBean {
         this.nroSerie = nroSerie;
     }
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "idComputadora")
     public Computadora getComputadora() {
         return computadora;
     }
