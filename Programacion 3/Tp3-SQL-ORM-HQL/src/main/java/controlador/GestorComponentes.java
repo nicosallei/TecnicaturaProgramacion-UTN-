@@ -28,13 +28,14 @@ public class GestorComponentes extends Gestor {
 
     
     
-    public void insertarComponentes(long id, String nombre, String nroSerie, Long idComputadora) {
+    public void insertarComponentes(long id, String nombre, String nroSerie, Long idComputadora) throws SQLException {
         try {
             
                 // Se crea el objeto PreparedStatement.
                 // Este precompila la sentencia SQL especificada.
                 // Los signos de interrogación señalan el lugar en que deben establecerse los
                 // parámetros antes de que se ejecute la sentencia.
+                conexion.setAutoCommit(false);
                 PreparedStatement ps = conexion.prepareStatement("INSERT INTO componente (id, nombre, nroSerie, idComputadora) VALUES (?, ?, ?, ?)");
 
                 // Se establecen los parámetros y se ejecuta la sentencia.
@@ -44,7 +45,9 @@ public class GestorComponentes extends Gestor {
                 ps.setLong(4, idComputadora);
                 ps.executeUpdate();
             
+                conexion.commit();
         } catch (SQLException ex) {
+            conexion.rollback();
             Logger.getLogger(BaseDeDatos.class.getName()).log(Level.SEVERE, null, ex);
         }
 

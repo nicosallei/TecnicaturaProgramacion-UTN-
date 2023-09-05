@@ -27,9 +27,9 @@ public class GestorComputadora extends Gestor {
     }
     
     
-    public void insertarComputadora(Long id, String codigo, String marca, String modelo) {
+    public void insertarComputadora(Long id, String codigo, String marca, String modelo) throws SQLException {
         try {
-            
+                conexion.setAutoCommit(false);
                 // Se crea el objeto PreparedStatement.
                 // Este precompila la sentencia SQL especificada.
                 // Los signos de interrogación señalan el lugar en que deben establecerse los
@@ -42,8 +42,11 @@ public class GestorComputadora extends Gestor {
                 ps.setString(3, marca);
                 ps.setString(4, modelo);
                 ps.executeUpdate();
+                
+                conexion.commit();
             
         } catch (SQLException ex) {
+            conexion.rollback();
             Logger.getLogger(BaseDeDatos.class.getName()).log(Level.SEVERE, null, ex);
         }
 
