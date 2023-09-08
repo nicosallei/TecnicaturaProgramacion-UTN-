@@ -36,8 +36,6 @@ namespace Tp4_READ_WRITE_FILES
                 return null;
             }
 
-
-
         }
 
 

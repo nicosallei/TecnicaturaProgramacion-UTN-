@@ -14,8 +14,9 @@ namespace Tp4_READ_WRITE_FILES
     {
 
        
-       public void RunSqlTransaction(int x)
+       public void RunSqlTransaction(String[][] arreglo)
         {
+            ReadWriteFile app = new ReadWriteFile();
             MySqlConnection myConnection = base.conexion();
             myConnection.Open();
             MySqlCommand myCommand = myConnection.CreateCommand();
@@ -29,27 +30,28 @@ namespace Tp4_READ_WRITE_FILES
             
             try
             {
-                ReadWriteFile app = new ReadWriteFile();
-                string[][] arreglo = app.readFile(x);
-                
+                               
 
                 for (int i = 0; i < 50; i++)
                 {
-
+                    string fechaString = arreglo[i][1];
+                    DateTime fecha = DateTime.Parse(fechaString);
+                    string fechaMySQL = fecha.ToString("yyyy-MM-dd HH:mm:ss");
+                    string precio = arreglo[i][4].Replace(',', '.');
+                  
                     if (app.buscarCodigo(arreglo[i][2]))
                     {
-                        myCommand.CommandText = "UPDATE articulo_copy SET id='" + arreglo[i][0] + "',fechaAlta='" + arreglo[i][1] + "',codigo='" + arreglo[i][2] + "',denominacion='" + arreglo[i][3] + "',precio='" + arreglo[i][4] + "',publicado='" + arreglo[i][5] +"'";
+                        myCommand.CommandText = "UPDATE articulo_copy SET id='" + arreglo[i][0] + "',fechaAlta='" + fechaMySQL + "',codigo='" + arreglo[i][2] + "',denominacion='" + arreglo[i][3] + "',precio=" + precio + ",publicado='" + arreglo[i][5] + "'Where id= '" + arreglo[i][0]+"';";
                         myCommand.ExecuteNonQuery();
                     }
-                    else {
-
-                        myCommand.CommandText = "INSERT INTO articulo_copy (id,fechaAlta,codigo,denominacion,precio,publicado) VALUES ('" + arreglo[i][0] + "','" + arreglo[i][1] + "','" + arreglo[i][2] + "','" + arreglo[i][3] + "','" + arreglo[i][4] + "','" + arreglo[i][5] + "')";
+                    else
+                    {
+                        myCommand.CommandText = "INSERT INTO articulo_copy (id,fechaAlta,codigo,denominacion,precio,publicado) VALUES ('" + arreglo[i][0] + "','" + fechaMySQL + "','" + arreglo[i][2] + "','" + arreglo[i][3] + "'," + precio + ",'" + arreglo[i][5] + "')";
                         myCommand.ExecuteNonQuery();
-
                     }
                 }  
                 myTrans.Commit();
-                Console.WriteLine("Se insertaron 50 registros en la base.");
+                //Console.WriteLine("Se insertaron 50 registros en la base.");
             }
             catch (Exception e)
             {
@@ -76,32 +78,32 @@ namespace Tp4_READ_WRITE_FILES
 
 
 
-        public void insertar()
-        {
-           
-            ReadWriteFile archivo = new ReadWriteFile();
-            string[][] arreglo = archivo.readFile(0);
-            Console.WriteLine(arreglo[5][0] + "','" + arreglo[5][1] + "','" + arreglo[5][2] + "','" + arreglo[5][3] + "','" + arreglo[5][4] + "','" + arreglo[5][5] + "-");
-            string sql="INSERT INTO articulo_copy (id,fechaAlta,codigo,denominacion,precio,publicado) VALUES ('" + arreglo[5][0] + "','" + arreglo[5][1] + "','" + arreglo[5][2] + "','" + arreglo[5][3] + "','" + double.Parse(arreglo[5][4]) + "','" + arreglo[5][5] + "')";
-            
+        //public void insertar()
+        //{
 
-            try
-            {
-                MySqlConnection conexionBD = base.conexion();
-                conexionBD.Open();
-                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
-                comando.ExecuteNonQuery();
-
-            }
-            catch (MySqlException ex)
-            {
-                Console.WriteLine(ex.Message.ToString());
-                
-            }
-            
+        //    ReadWriteFile archivo = new ReadWriteFile();
+        //    string[][] arreglo = archivo.readFile(0);
+        //    Console.WriteLine(arreglo[5][0] + "','" + arreglo[5][1] + "','" + arreglo[5][2] + "','" + arreglo[5][3] + "','" + arreglo[5][4] + "','" + arreglo[5][5] + "-");
+        //    string sql = "INSERT INTO articulo_copy (id,fechaAlta,codigo,denominacion,precio,publicado) VALUES ('" + arreglo[5][0] + "','" + arreglo[5][1] + "','" + arreglo[5][2] + "','" + arreglo[5][3] + "','" + double.Parse(arreglo[5][4]) + "','" + arreglo[5][5] + "')";
 
 
-        }
+        //    try
+        //    {
+        //        MySqlConnection conexionBD = base.conexion();
+        //        conexionBD.Open();
+        //        MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+        //        comando.ExecuteNonQuery();
+
+        //    }
+        //    catch (MySqlException ex)
+        //    {
+        //        Console.WriteLine(ex.Message.ToString());
+
+        //    }
+
+
+
+        //}
 
     }
 

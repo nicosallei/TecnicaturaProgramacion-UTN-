@@ -1,0 +1,6 @@
+modelo\EntityBean.class
+controlador\Gestor.class
+modelo\Computadora.class
+conexion\BaseDeDatos.class
+modelo\Componente.class
+persistencia\ConfigHibernate.class
