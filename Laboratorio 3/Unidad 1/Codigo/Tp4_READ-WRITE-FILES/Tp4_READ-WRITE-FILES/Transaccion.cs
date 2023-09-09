@@ -1,4 +1,5 @@
-﻿using MySqlConnector;
+﻿using Microsoft.VisualBasic;
+using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -7,14 +8,15 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
+using Tp4_READ_WRITE_FILES;
 
 namespace Tp4_READ_WRITE_FILES
 {
     internal class Transaccion : Conexion
     {
 
-       
-       public void RunSqlTransaction(String[][] arreglo)
+
+        public void insertar(String[][] arreglo, int contador)
         {
             ReadWriteFile app = new ReadWriteFile();
             MySqlConnection myConnection = base.conexion();
@@ -27,29 +29,30 @@ namespace Tp4_READ_WRITE_FILES
             // to Command object for a pending local transaction
             myCommand.Connection = myConnection;
             myCommand.Transaction = myTrans;
-            
+            String prueba = "";
             try
             {
-                               
-
-                for (int i = 0; i < 50; i++)
+                for (int i = 0; i < contador; i++)
                 {
                     string fechaString = arreglo[i][1];
                     DateTime fecha = DateTime.Parse(fechaString);
                     string fechaMySQL = fecha.ToString("yyyy-MM-dd HH:mm:ss");
                     string precio = arreglo[i][4].Replace(',', '.');
-                  
+                    string denominacion = arreglo[i][3].Replace("'", " ");
+                     //prueba = "INSERT INTO articulo_copy (id,fechaAlta,codigo,denominacion,precio,publicado) VALUES ('" + arreglo[i][0] + "','" + fechaMySQL + "','" + arreglo[i][2] + "','" + denominacion + "'," + precio + ",'" + arreglo[i][5] + "')";
+
                     if (app.buscarCodigo(arreglo[i][2]))
                     {
-                        myCommand.CommandText = "UPDATE articulo_copy SET id='" + arreglo[i][0] + "',fechaAlta='" + fechaMySQL + "',codigo='" + arreglo[i][2] + "',denominacion='" + arreglo[i][3] + "',precio=" + precio + ",publicado='" + arreglo[i][5] + "'Where id= '" + arreglo[i][0]+"';";
+                        myCommand.CommandText = "UPDATE articulo_copy SET id='" + arreglo[i][0] + "',fechaAlta='" + fechaMySQL + "',codigo='" + arreglo[i][2] + "',denominacion='" + denominacion + "',precio=" + precio + ",publicado='" + arreglo[i][5] + "'Where id= '" + arreglo[i][0] + "';";
                         myCommand.ExecuteNonQuery();
                     }
                     else
                     {
-                        myCommand.CommandText = "INSERT INTO articulo_copy (id,fechaAlta,codigo,denominacion,precio,publicado) VALUES ('" + arreglo[i][0] + "','" + fechaMySQL + "','" + arreglo[i][2] + "','" + arreglo[i][3] + "'," + precio + ",'" + arreglo[i][5] + "')";
+                        myCommand.CommandText = "INSERT INTO articulo_copy (id,fechaAlta,codigo,denominacion,precio,publicado) VALUES ('" + arreglo[i][0] + "','" + fechaMySQL + "','" + arreglo[i][2] + "','" + denominacion + "'," + precio + ",'" + arreglo[i][5] + "')";
                         myCommand.ExecuteNonQuery();
                     }
-                }  
+                }
+
                 myTrans.Commit();
                 //Console.WriteLine("Se insertaron 50 registros en la base.");
             }
@@ -69,43 +72,13 @@ namespace Tp4_READ_WRITE_FILES
                 }
                 Console.WriteLine("Exception de tipo " + e.GetType() +
                 " mientras se insertaban los datos.");
-            }
+                //Console.WriteLine(prueba);
+                }
             finally
             {
                 myConnection.Close();
             }
         }
-
-
-
-        //public void insertar()
-        //{
-
-        //    ReadWriteFile archivo = new ReadWriteFile();
-        //    string[][] arreglo = archivo.readFile(0);
-        //    Console.WriteLine(arreglo[5][0] + "','" + arreglo[5][1] + "','" + arreglo[5][2] + "','" + arreglo[5][3] + "','" + arreglo[5][4] + "','" + arreglo[5][5] + "-");
-        //    string sql = "INSERT INTO articulo_copy (id,fechaAlta,codigo,denominacion,precio,publicado) VALUES ('" + arreglo[5][0] + "','" + arreglo[5][1] + "','" + arreglo[5][2] + "','" + arreglo[5][3] + "','" + double.Parse(arreglo[5][4]) + "','" + arreglo[5][5] + "')";
-
-
-        //    try
-        //    {
-        //        MySqlConnection conexionBD = base.conexion();
-        //        conexionBD.Open();
-        //        MySqlCommand comando = new MySqlCommand(sql, conexionBD);
-        //        comando.ExecuteNonQuery();
-
-        //    }
-        //    catch (MySqlException ex)
-        //    {
-        //        Console.WriteLine(ex.Message.ToString());
-
-        //    }
-
-
-
-        //}
-
     }
-
     
 }
