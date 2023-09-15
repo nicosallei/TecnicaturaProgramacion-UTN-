@@ -1,0 +1,7 @@
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Trabajo_Practico_XML\Trabajo_Practico_XML\obj\Debug\Trabajo_Practico_XML.csproj.AssemblyReference.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Trabajo_Practico_XML\Trabajo_Practico_XML\obj\Debug\Trabajo_Practico_XML.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Trabajo_Practico_XML\Trabajo_Practico_XML\bin\Debug\Trabajo_Practico_XML.exe.config
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Trabajo_Practico_XML\Trabajo_Practico_XML\bin\Debug\Trabajo_Practico_XML.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Trabajo_Practico_XML\Trabajo_Practico_XML\bin\Debug\Trabajo_Practico_XML.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Trabajo_Practico_XML\Trabajo_Practico_XML\obj\Debug\Trabajo_Practico_XML.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\Trabajo_Practico_XML\Trabajo_Practico_XML\obj\Debug\Trabajo_Practico_XML.pdb
