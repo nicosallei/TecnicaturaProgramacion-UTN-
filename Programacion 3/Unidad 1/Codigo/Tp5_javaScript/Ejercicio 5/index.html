@@ -1,0 +1,30 @@
+<head>
+  <title>Validación de edad</title>
+</head>
+<body>
+  <h1>Validación de edad</h1>
+
+  <input type="radio" name="edad" id="mayor" value="mayor">
+  <label for="mayor">Sí, soy mayor de 18 años</label><br>
+
+  <input type="radio" name="edad" id="menor" value="menor">
+  <label for="menor">No, soy menor de 18 años</label><br><br>
+
+  <button onclick="validarEdad()">Validar</button>
+
+  <script>
+    function validarEdad() {
+      var seleccion = document.querySelector('input[name="edad"]:checked');
+      if (seleccion) {
+        if (seleccion.value === 'mayor') {
+          alert("Puede ingresar al sitio.");
+        } else {
+          alert("No puede ingresar al sitio.");
+        }
+      } else {
+        alert("Por favor, seleccione si es mayor o menor de 18 años.");
+      }
+    }
+  </script>
+</body>
+</html>

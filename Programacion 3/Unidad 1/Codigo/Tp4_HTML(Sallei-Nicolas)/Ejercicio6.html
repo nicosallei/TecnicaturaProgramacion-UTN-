@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>Ejercicio 6 Programacion 3</title>
+
+    <style>
+        .estiloDiv{
+            display: flex;
+            justify-content: space-around;
+            font-weight: bold
+        }
+
+        .estiloText{
+            position: relative;
+            left: 5%;
+            bottom: -20px;
+        }
+
+        .estiloChechBox{
+            position: relative;
+            left: 32%;
+            bottom: 40px;
+        }
+
+        .estiloRadio{
+            position: relative;
+            left: 55%;
+            bottom: 140px;
+        }
+
+        .estiloSelect{
+            position: relative;
+            left: 85%;
+            bottom: 200px;
+
+        }
+
+        #buttonBuscar{
+            position: relative;
+            left: 25%;
+        }
+
+        #textAreaSugerencia{
+            position: relative;
+            left: 18%;
+            bottom: 6%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 align="center">CATÁLOGO DE ARTE</title>  
+    <h3 align="left">Introduce los términos de búsqueda:</h3>    
+    
+    <div class="estiloDiv" >
+        <div>OBRA</div>
+        <div>TIPO</div>
+        <div>DISPONIBILIDAD</div>
+        <div>ESTILO</div>
+    </div>
+
+    <div class="estiloText" >
+        <label><i>Título </i></label><input type="text" title="Nombre"  size="20" id="txtTitulo" name="txtTitulo"></input>
+        <br></br>
+        <label><i>Autor </i></label><input type="text"  size="15" id="txtAutor" name="txtAutor"></input>
+    </div>   
+
+    <div class="estiloChechBox" >
+        <input type="checkbox" id="checkboxEsc" name="tipo" value="esc"> <label>Escultura</label>
+        <br></br>
+        <input type="checkbox" id="checkboxArq" name="tipo" value="arq"> <label>Arquitectura</label>
+        <br></br>
+        <input type="checkbox" id="checkboxPint" name="tipo" value="pint"> <label>Pintura</label>
+    </div> 
+
+    <div class="estiloRadio" >
+        <input type="radio" id="radPublic" name="disp" value="publ"> <label>Museo / Acceso público</label>
+        <br></br>
+        <input type="radio" id="radPriv" name="disp" value="arq"> <label>Colección privada</label>
+    </div> 
+
+    <div class="estiloSelect" >
+        <Select>
+            <Option id="seleClas" name="select" Value="clas">Clásico</Option>   
+            <Option id="seleAbs" name="select" Value="abs">Abstracto</Option>
+            <Option id="seleSurr" name="select" Value="surr">Surrealista</Option>
+            <Option id="seleOtro" name="select" Value="otro">Otros</Option>
+        </Select>
+    </div> 
+
+
+    <h3><b>Háganos sabes sus sugerencias:</b></h3>
+
+    <textarea cols="40" rows="4" id="textAreaSugerencia" name="textAreaSugerencia">Me gustaría indicar que...</textarea>
+    
+    <input type="button" name="buttonBuscar" id="buttonBuscar" value="Buscar">
+</html>

@@ -1,0 +1,27 @@
+<head>
+  <title>Calculadora de Sueldo</title>
+</head>
+<body>
+  <h1>Calculadora de Sueldo</h1>
+
+  <script>
+    var sueldo = parseFloat(prompt("Ingresa el sueldo del operario"));
+    var antiguedad = parseInt(prompt("Ingresa la antigüedad del operario (en años)"));
+
+    if (sueldo < 500) {
+      if (antiguedad >= 10) {
+        // Caso a: Aumento del 20%
+        var sueldoConAumento = sueldo * 1.2;
+        document.write("Sueldo con aumento del 20%: $" + sueldoConAumento.toFixed(2));
+      } else {
+        // Caso b: Aumento del 5%
+        var sueldoConAumento = sueldo * 1.05;
+        document.write("Sueldo con aumento del 5%: $" + sueldoConAumento.toFixed(2));
+      }
+    } else {
+      // Caso c: Sueldo sin cambios
+      document.write("Sueldo sin cambios: $" + sueldo.toFixed(2));
+    }
+  </script>
+</body>
+</html>

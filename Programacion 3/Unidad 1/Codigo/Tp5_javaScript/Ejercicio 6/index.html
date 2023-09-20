@@ -1,0 +1,40 @@
+<head>
+  <title>Ventana Modal</title>
+
+  <style>
+    /* Estilos para la ventana modal */
+    .modal {
+      display: none;
+      width: 600px;
+      height: 300px;
+      border: 1px solid #000;
+      background-color: #fff;
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>Ventana Modal</h1>
+
+  <button onclick="abrirVentanaModal()">Abrir Ventana Modal</button>
+
+  <!-- Contenido de la ventana modal -->
+  <div id="miVentanaModal" class="modal">
+    <h2>Ventana Modal</h2>
+    <p>Contenido de la ventana modal.</p>
+    <button onclick="cerrarVentanaModal()">Cerrar</button>
+  </div>
+
+  <script>
+    function abrirVentanaModal() {
+      var modal = document.getElementById('miVentanaModal');
+      modal.style.display = 'block';
+    }
+
+    function cerrarVentanaModal() {
+      var modal = document.getElementById('miVentanaModal');
+      modal.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

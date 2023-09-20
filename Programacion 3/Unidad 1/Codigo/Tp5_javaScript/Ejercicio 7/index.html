@@ -1,0 +1,20 @@
+<head>
+  <title>Duplicar Valor al Doble Clic</title>
+</head>
+<body>
+  <div id="numero">2</div>
+
+  <script>
+    function duplicarValor() {
+      var divNumero = document.getElementById('numero');
+      var valor = parseInt(divNumero.innerHTML);
+      var nuevoValor = valor * 2;
+      divNumero.innerHTML = nuevoValor;
+    }
+
+    // Asociar la función al evento de doble clic
+    var divNumero = document.getElementById('numero');
+    divNumero.addEventListener('dblclick', duplicarValor);
+  </script>
+</body>
+</html>
