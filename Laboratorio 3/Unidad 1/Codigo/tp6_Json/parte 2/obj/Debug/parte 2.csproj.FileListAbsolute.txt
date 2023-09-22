@@ -1,0 +1,10 @@
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\tp6_Json\parte 2\bin\Debug\parte 2.exe.config
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\tp6_Json\parte 2\bin\Debug\parte 2.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\tp6_Json\parte 2\bin\Debug\parte 2.pdb
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\tp6_Json\parte 2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\tp6_Json\parte 2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\tp6_Json\parte 2\obj\Debug\parte 2.csproj.AssemblyReference.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\tp6_Json\parte 2\obj\Debug\parte 2.csproj.CoreCompileInputs.cache
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\tp6_Json\parte 2\obj\Debug\parte 2.csproj.CopyComplete
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\tp6_Json\parte 2\obj\Debug\parte 2.exe
+C:\Users\nicos\Desktop\Archivos de git\TecnicaturaProgramacion-UTN-\Laboratorio 3\Unidad 1\tp6_Json\parte 2\obj\Debug\parte 2.pdb
