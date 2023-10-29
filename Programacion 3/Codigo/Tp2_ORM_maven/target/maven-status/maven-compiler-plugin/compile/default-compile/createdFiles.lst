@@ -1,0 +1,14 @@
+controlador\Gestor.class
+main\ORM.class
+modelo\Empleado.class
+modelo\Especialidad.class
+persistencia\ConfigHibernate.class
+modelo\HistoriaClinica.class
+modelo\Turno.class
+modelo\DetalleHistoriaClinica.class
+util\FuncionApp.class
+modelo\Domicilio.class
+modelo\Medico.class
+controlador\GestorORM.class
+modelo\Paciente.class
+modelo\Persona.class
